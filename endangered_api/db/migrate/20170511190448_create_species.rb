@@ -6,6 +6,7 @@ class CreateSpecies < ActiveRecord::Migration[5.0]
       t.string  "status"
       t.string  "threat"
       t.string  "img_url"
+      t.references :category, index: true, foreign_key: true
     end
   end
 end

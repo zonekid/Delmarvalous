@@ -16,6 +16,10 @@ angular
     "$resource",
     AnimalFactoryFunction
   ])
+  .factory("SpecieFactory", [
+    "$resource",
+    SpecieFactoryFunction
+    ])
   .controller("CategoryIndexController", [
     "AnimalFactory",
     CategoryIndexControllerFunction
@@ -28,6 +32,11 @@ angular
   .controller("SpecieIndexController",[
     "AnimalFactory",
     SpecieIndexControllerFunction
+  ])
+  .controller("SpecieShowController",[
+    "SpecieFactory",
+    "$stateParams",
+    SpecieShowControllerFunction
   ])
 
 function RouterFunction($stateProvider){
@@ -44,35 +53,47 @@ $stateProvider
   controller: "CategoryShowController",
   controllerAs: "vm"
 })
-
 .state("specieIndex",{
   url: "/species",
   templateUrl: "js/ng-views/specie_views/index.html",
   controller: "SpecieIndexController",
   controllerAs: "vm"
 })
+.state("specieShow",{
+  url: "/categories/:category_id/species/:id",
+  templateUrl: "js/ng-views/specie_views/show.html",
+  controller: "SpecieShowController",
+  controllerAs: "vm"
+})
 
+}
+
+
+function CategoryIndexControllerFunction (AnimalFactory){
+  this.categories = AnimalFactory.query()
+}
+
+
+function CategoryShowControllerFunction (AnimalFactory, $stateParams){
+  this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
 function SpecieIndexControllerFunction (AnimalFactory){
   this.species = AnimalFactory.query()
 }
 
-function CategoryIndexControllerFunction (AnimalFactory){
-  this.categories = AnimalFactory.query()
+function SpecieShowControllerFunction (SpecieFactory, $stateParams){
+ this.specie = SpecieFactory.get({id: $stateParams.id})
+ 
 }
-// the .query in each index controllerfunction may need some changing so it only grabs the "categories" or "species" separately
 
-function CategoryShowControllerFunction (AnimalFactory, $stateParams){
-  this.category = AnimalFactory.get({id: $stateParams.id})
-
-
-
-
-}
 
 function AnimalFactoryFunction( $resource ){
   return $resource( "http://localhost:3000/categories/:id.json", {}, {})
+}
+
+function SpecieFactoryFunction( $resource ){
+  return $resource( "http://localhost:3000/species/:id.json", {}, {})
 }
 
 

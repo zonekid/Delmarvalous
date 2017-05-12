@@ -1,4 +1,7 @@
 <div data-ng-repeat= "specie in vm.category.species">
-{{specie}}
-<div>
 
+
+
+<p><a data-ui-sref="specieShow({id: specie.id})">{{specie.common_name}}</a></p>
+
+</div>

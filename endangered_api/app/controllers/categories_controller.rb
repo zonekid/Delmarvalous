@@ -12,7 +12,7 @@ def show
   @category = Category.find(params[:id])
 
   respond_to do |format|
-    format.json { render json: @category}
+    format.json { render json: @category, include: :species}
   end
 end
 

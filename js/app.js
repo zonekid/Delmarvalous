@@ -1,3 +1,7 @@
+"use strict";
+
+(function(){
+
 angular
   .module("endangeredApp",[
     "ui.router",
@@ -17,29 +21,30 @@ angular
   ])
   .controller("CategoryShowController",[
     "AnimalFactory",
-    CategoryShowControllerFuncion
+    "stateParams",
+    CategoryShowControllerFunction
   ])
 
 function RouterFunction($stateProvider){
 $stateProvider
-.state("categoryIndex",[
+.state("categoryIndex",{
   url: "/categories",
   templateUrl: "js/ng-views/category_views/index.html",
   controller: "CategoryIndexController",
   controllerAs: "vm"
-])
-.state("categoryShow",[
+})
+.state("categoryShow",{
   url: "/categories/:id",
   templateUrl: "js/ng-views/category_views/show.html",
-  controller: "CategoryIndexController",
+  controller: "CategoryShowController",
   controllerAs: "vm"
-])
-.state("specieIndex",[
+})
+.state("specieIndex",{
   url: "/species",
   templateUrl: "js/ng-views/specie_views/index.html",
   controller: "SpecieIndexController",
   controllerAs: "vm"
-])
+})
 }
 
 function SpecieIndexControllerFunction (AnimalFactory){
@@ -52,9 +57,11 @@ function CategoryIndexControllerFunction (AnimalFactory){
 // the .query in each index controllerfunction may need some changing so it only grabs the "categories" or "species" separately
 
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
-  this.category = AnimalFactroy.get({id: $stateParams.id})
+  this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
 function AnimalFactoryFunction( $resource ){
-  return $resource( "http://localhost:3000/", {}, {})
+  return $resource( "http://localhost:3000/categories.json", {}, {})
 }
+
+})();

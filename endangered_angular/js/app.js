@@ -22,7 +22,7 @@ angular
   ])
   .controller("CategoryShowController",[
     "AnimalFactory",
-    "stateParams",
+    "$stateParams",
     CategoryShowControllerFunction
   ])
   .controller("SpecieIndexController",[
@@ -66,13 +66,13 @@ function CategoryIndexControllerFunction (AnimalFactory){
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
 
-  this.species = this.category.species
+
 
 
 }
 
 function AnimalFactoryFunction( $resource ){
-  return $resource( "http://localhost:3000/categories.json", {}, {})
+  return $resource( "http://localhost:3000/categories/:id.json", {}, {})
 }
 
 

@@ -53,7 +53,7 @@ $stateProvider
 // })
 }
 
-function SpecieIndexControllerFunction (AnimalFactory){
+function SpecieIndexControllerFunction (SpecieFactory){
   this.species = AnimalFactory.query()
 }
 
@@ -69,5 +69,6 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
 function AnimalFactoryFunction( $resource ){
   return $resource( "http://localhost:3000/categories.json", {}, {})
 }
+
 
 })();

@@ -66,7 +66,7 @@ function CategoryIndexControllerFunction (AnimalFactory){
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
 
-  this.species = this.category.species
+  this.species = AnimalFactory.query()
 
 
 }

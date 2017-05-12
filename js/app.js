@@ -25,11 +25,10 @@ angular
     "stateParams",
     CategoryShowControllerFunction
   ])
-  // .controller("SpecieIndexController",[
-  //   "AnimalFactory",
-  //   "stateParams"
-  //   SpecieIndexControllerFunction
-  // ])
+  .controller("SpecieIndexController",[
+    "AnimalFactory",
+    SpecieIndexControllerFunction
+  ])
 
 function RouterFunction($stateProvider){
 $stateProvider
@@ -46,12 +45,12 @@ $stateProvider
   controllerAs: "vm"
 })
 
-// .state("specieIndex",{
-//   url: "/species",
-//   templateUrl: "js/ng-views/specie_views/index.html",
-//   controller: "SpecieShowController",
-//   controllerAs: "vm"
-// })
+.state("specieIndex",{
+  url: "/species",
+  templateUrl: "js/ng-views/specie_views/index.html",
+  controller: "SpecieIndexController",
+  controllerAs: "vm"
+})
 
 }
 
@@ -66,7 +65,10 @@ function CategoryIndexControllerFunction (AnimalFactory){
 
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
+
   this.species = this.category.species
+
+
 }
 
 function AnimalFactoryFunction( $resource ){

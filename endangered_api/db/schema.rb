@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20170512022243) do
-=======
 ActiveRecord::Schema.define(version: 20170512020238) do
->>>>>>> origin
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,20 +20,8 @@ ActiveRecord::Schema.define(version: 20170512020238) do
     t.string  "name"
   end
 
-<<<<<<< HEAD
-  create_table "categorys", force: :cascade do |t|
-    t.boolean "customizable"
-    t.string  "name"
-  end
-
-  create_table "comments", force: :cascade do |t|
-    t.string  "content"
-    t.integer "specie_id"
-    t.index ["specie_id"], name: "index_comments_on_specie_id", using: :btree
-=======
   create_table "comments", force: :cascade do |t|
     t.string "content"
->>>>>>> origin
   end
 
   create_table "species", force: :cascade do |t|
@@ -50,9 +34,5 @@ ActiveRecord::Schema.define(version: 20170512020238) do
     t.index ["category_id"], name: "index_species_on_category_id", using: :btree
   end
 
-<<<<<<< HEAD
-  add_foreign_key "comments", "species", column: "specie_id"
-=======
->>>>>>> origin
   add_foreign_key "species", "categories"
 end

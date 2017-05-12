@@ -3,3 +3,7 @@
 <div>{{vm.specie.scientific_name}}</div>
 <div><img src="{{vm.specie.img_url}}"></div>
 
+<form>
+  <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
+  <button type="button" data-ng-click="vm.create()">Create</button>
+</form>

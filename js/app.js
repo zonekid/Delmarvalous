@@ -55,7 +55,7 @@ $stateProvider
 
 }
 
-function SpecieIndexControllerFunction (SpecieFactory){
+function SpecieIndexControllerFunction (AnimalFactory){
   this.species = AnimalFactory.query()
 }
 
@@ -66,6 +66,7 @@ function CategoryIndexControllerFunction (AnimalFactory){
 
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
+  this.species = this.category.species
 }
 
 function AnimalFactoryFunction( $resource ){

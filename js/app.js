@@ -1,3 +1,4 @@
+
 "use strict";
 
 (function(){
@@ -24,6 +25,11 @@ angular
     "stateParams",
     CategoryShowControllerFunction
   ])
+  // .controller("SpecieIndexController",[
+  //   "AnimalFactory",
+  //   "stateParams"
+  //   SpecieIndexControllerFunction
+  // ])
 
 function RouterFunction($stateProvider){
 $stateProvider
@@ -39,15 +45,17 @@ $stateProvider
   controller: "CategoryShowController",
   controllerAs: "vm"
 })
-.state("specieIndex",{
-  url: "/species",
-  templateUrl: "js/ng-views/specie_views/index.html",
-  controller: "SpecieIndexController",
-  controllerAs: "vm"
-})
+
+// .state("specieIndex",{
+//   url: "/species",
+//   templateUrl: "js/ng-views/specie_views/index.html",
+//   controller: "SpecieShowController",
+//   controllerAs: "vm"
+// })
+
 }
 
-function SpecieIndexControllerFunction (AnimalFactory){
+function SpecieIndexControllerFunction (SpecieFactory){
   this.species = AnimalFactory.query()
 }
 
@@ -63,5 +71,6 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
 function AnimalFactoryFunction( $resource ){
   return $resource( "http://localhost:3000/categories.json", {}, {})
 }
+
 
 })();

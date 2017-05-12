@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Category.destroy_all
-Specie.destroy_all
+Species.destroy_all
 
 birds= Category.create! ({customizable: false, name: "birds"})
 mammals= Category.create! ({customizable: false, name: "mammals"})
@@ -16,7 +16,7 @@ reptiles= Category.create! ({customizable: false, name: "reptiles"})
 amphibians= Category.create! ({customizable: false, name: "amphibians"})
 insects= Category.create! ({customizable: false, name: "insects"})
 
-species= Specie.create!([
+species= Species.create!([
     {common_name:"Mitchell's satyr", scientific_name: "Neonympha mitchellii", status: "Endangered", threat:"Habitat Loss and Degradation; Exotic Weed Invasion; Pesticides / Pollutants; Butterfly Collectors", img_url: "https://mnfi.anr.msu.edu/element-images/1763.jpg", category: insects },
     {common_name:"Puritan tiger beetle", scientific_name: "Cicindela puritana", status: "Endangered ", threat:"Habitat Loss and Degradation; Flooding; Parasites; Insect Predators", img_url: "http://i5.photobucket.com/albums/y196/Garfman/puritana202f5581.gif", category: insects },
     {common_name:"Shenandoah salamander", scientific_name: "Plethodon shenandoah", status: "Endangered ", threat:"Infestation by non-native insects/disease; restricted range of habitat", img_url: "http://www.virginiaherpetologicalsociety.com/amphibians/salamanders/shenandoah-salamander/Shenandoah%20Salamander%20(Plethodon%20shenandoah)0002.JPG", category: amphibians },

@@ -10,15 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170511190503) do
+ActiveRecord::Schema.define(version: 20170512020238) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "categories", force: :cascade do |t|
+    t.boolean "customizable"
+    t.string  "name"
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.string "content"
   end
 
   create_table "species", force: :cascade do |t|
+    t.string  "common_name"
+    t.string  "scientific_name"
+    t.string  "status"
+    t.string  "threat"
+    t.string  "img_url"
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_species_on_category_id", using: :btree
   end
 
+  add_foreign_key "species", "categories"
 end

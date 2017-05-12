@@ -1,11 +1,5 @@
-<h1>Species in DelMarVa</h1>
+{{vm.species}}
+<div data-ng-repeat= "specie in vm.species">
+{{specie}}
+<div>
 
-{{vm.category.name}}
-
-
-
-
-<div data-ng-repeat="specie in vm.species">
-<p><a data-ui-sref="specieShow({id: specie.id})">{{specie.name}}</a></p>
-
-</div>

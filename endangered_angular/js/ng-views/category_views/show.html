@@ -1,7 +1,8 @@
-<div data-ng-repeat= "specie in vm.category.species">
-
-
-
-<p><a data-ui-sref="specieShow({id: specie.id})">{{specie.common_name}}</a></p>
-
+<div class="map-wrapper">
+	<div class="map">
+		<div class="specie-listing-wrapper" data-ng-repeat= "specie in vm.category.species">
+			<div class="specie-icon">hey</div>
+			<div class="specie-listing"><a data-ui-sref="specieShow({id: specie.id})">{{specie.common_name}}</a></div>
+		</div>
+	</div>
 </div>

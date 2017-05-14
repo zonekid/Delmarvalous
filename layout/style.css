@@ -1,18 +1,33 @@
+.test * {
+    color: orange;
+    font-family: "Special Elite";
+}
+
+.welcome {
+    font-family: 'Special Elite', cursive;
+    color: red;
+}
+
+body {
+    background-image: url("turtle.jpg");
+    background-size: cover;
+}
+
 .map-wrapper {
 	display: flex;
 	justify-content: center;
 }
 
 .map-wrapper a {
-	color: black;
+	color: white;
 }
 
 .map {
-	background-image: url("delmarva.png");
+	background-image: url("map-of-states.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
-	height: 800px;
-	width: 800px;
+/*	background-size: contain;*/
+	height: 900px;
+	width: 1200px;
 }
 
 .specie-listing-wrapper {
@@ -23,15 +38,15 @@
 }
 
 .specie-icon {
-	background-image: url("marker.png");
+	background-image: url("green-marker.png");
 	background-size: contain;
 	height: 40px;
 	width: 40px;
 }
 
 .specie-listing {
-	/*background-color: pink;*/
 	align-items: center;
+	background-color: #53bba9;
 	border: solid black 2px;
 	border-radius: 20%;
 	display:flex;
@@ -42,36 +57,38 @@
 
 .specie-listing-wrapper:nth-of-type(1) {
 	/*background-color: red;*/
-	left: 500px;
-	top: 280px;
+	left: 940px;
+	top: 360px;
 }
 
 .specie-listing-wrapper:nth-of-type(2) {
 	/*background-color: orange;*/
-	left: 590px;
-	top: 120px;
+	left: 920px;
+	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(3) {
 	/*background-color: yellow;*/
-	left: 600px;
-	top: 120px;
+	left: 955px;
+	top: 270px;
 }
 
 .specie-listing-wrapper:nth-of-type(4) {
 	/*background-color: green;*/
-	left: 610px;
-	top: 120px;
+	left: 900px;
+	top: 225px;
 }
 
 .specie-listing-wrapper:nth-of-type(5) {
 	/*background-color: blue;*/
-	left: 525px;
-	top: 180px;
+	left: 905px;
+	top: 250px;
 }
 
 .specie-listing-wrapper:nth-of-type(6) {
 	/*background-color: purple;*/
-	bottom: 50px;
-	left: 525px;
+	left: 920px;
+	top: 185px;
+
 }
+

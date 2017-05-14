@@ -1,7 +1,7 @@
 <div class="map-wrapper">
 	<div class="map">
 		<div class="specie-listing-wrapper" data-ng-repeat= "specie in vm.category.species">
-			<div class="specie-icon"></div>
+			<div class="specie-icon" ng-click="vm.showSpecie(specie)"></div>
 			<div class="specie-listing"><a data-ui-sref="specieShow({id: specie.id})">{{specie.common_name}}</a></div>
 		</div>
 	</div>

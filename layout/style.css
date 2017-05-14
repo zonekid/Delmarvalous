@@ -1,0 +1,12 @@
+.welcome {
+    font-family: 'Special Elite', cursive;
+    color: red;
+}
+
+.test * {
+    color: orange;
+}
+
+body {
+    background-image: url(turtle.jpg);
+}

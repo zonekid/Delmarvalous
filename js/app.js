@@ -29,15 +29,19 @@ angular
     "$stateParams",
     CategoryShowControllerFunction
   ])
-  .controller("SpecieIndexController",[
-    "AnimalFactory",
-    SpecieIndexControllerFunction
-  ])
+  // .controller("SpecieIndexController",[
+  //   "AnimalFactory",
+  //   SpecieIndexControllerFunction
+  // ])
   .controller("SpecieShowController",[
     "SpecieFactory",
     "$stateParams",
     SpecieShowControllerFunction
   ])
+  // .controller("CommentIndexController",[
+  //   "CommentFactory",
+  //   CommentIndexControllerFunction
+  // ])
 
 function RouterFunction($stateProvider){
 $stateProvider
@@ -53,17 +57,23 @@ $stateProvider
   controller: "CategoryShowController",
   controllerAs: "vm"
 })
-.state("specieIndex",{
-  url: "/species",
-  templateUrl: "js/ng-views/specie_views/index.html",
-  controller: "SpecieIndexController",
-  controllerAs: "vm"
-})
+// .state("specieIndex",{
+//   url: "/species",
+//   templateUrl: "js/ng-views/specie_views/index.html",
+//   controller: "SpecieIndexController",
+//   controllerAs: "vm"
+// })
 .state("specieShow",{
   url: "/categories/:category_id/species/:id",
   templateUrl: "js/ng-views/specie_views/show.html",
   controller: "SpecieShowController",
   controllerAs: "vm"
+})
+.state("commentIndex", {
+url: "/categories/:category_id/species/:id",
+templateUrl: "js/ng-views/specie_views/show.html",
+controller: "CommentIndexController",
+controllerAs: "vm"
 })
 
 }
@@ -78,14 +88,18 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
-function SpecieIndexControllerFunction (AnimalFactory){
-  this.species = AnimalFactory.query()
-}
+// function SpecieIndexControllerFunction (AnimalFactory){
+//   this.species = AnimalFactory.query()
+// }
 
 function SpecieShowControllerFunction (SpecieFactory, $stateParams){
  this.specie = SpecieFactory.get({id: $stateParams.id})
- 
+
 }
+
+// function CommentIndexControllerFunction (CommentFactory){
+//   this.species = CommentFactory.query()
+// }
 
 
 function AnimalFactoryFunction( $resource ){
@@ -94,6 +108,10 @@ function AnimalFactoryFunction( $resource ){
 
 function SpecieFactoryFunction( $resource ){
   return $resource( "http://localhost:3000/species/:id.json", {}, {})
+}
+
+function CommentFactoryFunction ( $resource ){
+  return $resource( "http://localhost:3000/comments/:id.json", {}, {})
 }
 
 

@@ -1,13 +1,20 @@
-<div data-ng-class="vm.specie.category.name">
-<h2>Showing the Species</h2>
-<div><p>Common Name: </p>{{vm.specie.common_name}}</div>
-<div><p>Scientific Name: </p>{{vm.specie.scientific_name}}</div>
-<div><p>Status: </p>{{vm.specie.status}}</div>
-<div><p>Threat: </p>{{vm.specie.threat}}</div>
-<div><img src="{{vm.specie.img_url}}"></div>
 
+<div data-ng-class="vm.specie.category.name" class="specie-show">
+<div class="specie-show-info">
+<h2>Showing the Species</h2>
+<div class="specie-properties"> <span class="specie-show-bold">Common Name:</span> {{vm.specie.common_name}}</div>
+<div class="specie-properties"> <span class="specie-show-bold">Scientific Name:</span> {{vm.specie.scientific_name}}</div>
+<div class="specie-properties"> <span class="specie-show-bold">Status:</span> {{vm.specie.status}}</div>
+<div class="specie-properties"> <span class="specie-show-bold">Threat:</span> {{vm.specie.threat}}</div>
+<div class="specie-form">
+    <div data-ng-repeat= “comment in vm.specie.comments”>
+    {{comment.content}} <p data-ui-sref=“commentEdit ({id: comment.id})“>(edit)</p>
+    </div>
 <form>
   <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
   <button type="button" data-ng-click="vm.create()">Create</button>
 </form>
+</div>
+</div>
+<div class="specie-img"><img src="{{vm.specie.img_url}}"></div>
 </div>

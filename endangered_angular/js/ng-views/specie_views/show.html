@@ -3,6 +3,10 @@
 <div>{{vm.specie.scientific_name}}</div>
 <div><img src="{{vm.specie.img_url}}"></div>
 
+
+<div data-ng-repeat= "comment in vm.specie.comments">
+</div>
+
 <form>
   <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
   <button type="button" data-ng-click="vm.create()">Create</button>

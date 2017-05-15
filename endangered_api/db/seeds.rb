@@ -8,6 +8,7 @@
 
 Category.destroy_all
 Species.destroy_all
+Comment.destroy_all
 
 birds= Category.create! ({customizable: false, name: "birds"})
 mammals= Category.create! ({customizable: false, name: "mammals"})
@@ -41,3 +42,5 @@ species= Species.create!([
     {common_name:"Red cockaded woodpecker", scientific_name: "Picoides borealis", status: "Endangered ", threat:"Because of its biology and dependence on old-growth forest, this species is said to be uniquely susceptible to rapid declines under inappropriate management regimes", img_url: "https://iucnredlist-photos.s3.amazonaws.com/thumb/135092392.jpg?AWSAccessKeyId=AKIAJIJQNN2N2SMHLZJA&Expires=1519480491&Signature=1jr2dw0w%2F5CNDfYOOEIdPKx8FFM%3D", category: birds },
     {common_name:"Leatherback sea turtle", scientific_name: "Dermochelys coriacea", status: "Endangered ", threat:" incidental capture of marine turtles in fishing gear targeting other species,  direct utilization of turtles or eggs for human use, coastal development", img_url: "https://ecos.fws.gov/docs/species_images/doc3727.jpg", category: reptiles },
 ])
+
+comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11})

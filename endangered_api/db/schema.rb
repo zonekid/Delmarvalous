@@ -21,7 +21,11 @@ ActiveRecord::Schema.define(version: 20170512020238) do
   end
 
   create_table "comments", force: :cascade do |t|
-    t.string "content"
+    t.string  "content"
+    t.integer "species_id"
+    t.integer "category_id"
+    t.index ["category_id"], name: "index_comments_on_category_id", using: :btree
+    t.index ["species_id"], name: "index_comments_on_species_id", using: :btree
   end
 
   create_table "species", force: :cascade do |t|
@@ -34,5 +38,7 @@ ActiveRecord::Schema.define(version: 20170512020238) do
     t.index ["category_id"], name: "index_species_on_category_id", using: :btree
   end
 
+  add_foreign_key "comments", "categories"
+  add_foreign_key "comments", "species"
   add_foreign_key "species", "categories"
 end

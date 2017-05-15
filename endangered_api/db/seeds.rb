@@ -113,4 +113,91 @@ species= Species.create!([
 {common_name:"Cape Sable Seaside sparrow", scientific_name:"Ammodramus maritimus mirabilis", status:"Endangered", threat:"Predation and habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc5035.jpg", category:"birds"},
 
 {common_name:"Florida Grasshopper sparrow", scientific_name:"Ammodramus savannarum floridanus", status:"Endangered", threat:"Predation and habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc5034.jpg", category:"birds"},
+
+{common_name:"Wood Stork", scientific_name:"Mycteria americana", status:"Threatened", threat:"Habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc5013.jpg", category:"birds"},
+
+{common_name:"Bachman's Warbler", scientific_name:"Vermivora bachmanii", status:"Critically Endangered", threat:"Habitat loss", img_url:"https://identify.whatbird.com/img/4/63878/image.aspx", category:"birds"},
+
+{common_name:"Red wolf", scientific_name:"Canis rufus", status:"Critically Endangered", threat:"Hybridization with Coyotes or Red Wolf x Coyote hybrids is the primary threat to the species' persistence in the wild (Kelly et al. 1999). While hybridization with Coyotes was a factor in the Red Wolf's initial demise in the wild, it was not detected as a problem in north-eastern North Carolina until approximately 1992 (Phillips et al. 1995). Indeed, northeastern North Carolina was determined to be ideal for Red Wolf reintroductions because of a purported absence of coyotes (Parker 1986)", img_url:"https://ecos.fws.gov/docs/species_images/doc4996.jpg", category:"mammals"},
+
+{common_name:"Red-cockaded Woodpecker", scientific_name:"Picoides borealis", status:"threatened", threat:"Because of its biology and dependence on old-growth forest, this species is said to be uniquely susceptible to rapid declines under inappropriate management regimes (J. R. Walters in litt. 2013). The long-term clearance and economic management of habitat has reduced the viability of all populations.", img_url:"https://ecos.fws.gov/docs/species_images/doc3700.jpg", category:"birds"},
+
+{common_name:"Kemp's Ridley Sea Turtle", scientific_name:"Lepidochelys kempii", status:"Threatened", threat:"Habitat loss", img_url:"https://iucnredlist-photos.s3.amazonaws.com/thumb/787195903.jpg?AWSAccessKeyId=AKIAJIJQNN2N2SMHLZJA&Expires=1519497267&Signature=7UnnHZuyDxAoMIs3My5lc08EcuY%3D", category:"reptiles"},
+
+{common_name:"Loggerhead Sea Turtle", scientific_name:"Caretta caretta", status:"Endangered", threat:"Threats to Loggerheads vary in time and space, and in relative impact to populations", img_url:"https://ecos.fws.gov/docs/species_images/doc3723.jpg", category:"reptiles"},
+
+{common_name:"Blue Shiner", scientific_name:"Cyprinella caerulea", status:"Threatened", threat:"Declines have been caused by water pollution, siltation, and construction of reservoirs for hydropower, navigation, and flood control (USFWS 1995, End. Sp. Tech. Bull. 16[5]:8). These degraded/destroyed the habitat and fragmented the populations. Current concerns include siltation and excessive nutrient inputs deriving from runoff from small-scale agriculture, grazing, and urbanization (USFWS 1995, J. M. Pierson pers. comm. 1995).", img_url:"http://www.outdooralabama.com/sites/default/files//fishing/images/Shinerblue400A.jpg", category:"fishes"},
+
+{common_name:"Fin Whale", scientific_name:"Balaenoptera physalus", status:"Endangered", threat:"Prior to the advent of modern whaling in the late 19th century, Fin Whales were largely immune from human predation because they were too hard to catch. Fin Whales were depleted worldwide by commercial whaling in the 20th century. Fin Whales have been protected in the Southern Hemisphere and North Pacific since 1975, and catches ceased in the North Atlantic by 1990, except for small “aboriginal subsistence” catches off Greenland", img_url:"https://s-media-cache-ak0.pinimg.com/originals/7b/6a/fb/7b6afbddef555919975b869ed0021baf.jpg", category:"mammals"},
+
+{common_name:"North Atlantic right Whale", scientific_name:"Eubalaena glacialis", status:"Endangered", threat:"Right Whales in the North Atlantic are no longer hunted, and the most serious current threat is death or injury from entanglements in fishing gear and collisions with ships off the eastern coast of North America (Knowlton and Kraus 2001, Kraus and Rolland 2007).
+", img_url:"https://iucnredlist-photos.s3.amazonaws.com/thumb/1644313283.jpg?AWSAccessKeyId=AKIAJIJQNN2N2SMHLZJA&Expires=1519481999&Signature=%2FI9fvxUw%2BEy%2BcVemWmwlePKEmy0%3D", category:"mammals"},
+
+{common_name:"Rusty Patched Bumble Bee", scientific_name:"Bombus affinis", status:"Endangered", threat:"The primary threats attributed to the severe decline of Bombus affinis include pathogen spill-over from commercial to wild bees; habitat loss due to agriculture and development; pesticide use; and climate change (reviewed in Jepsen et al. 2013). Reduced genetic diversity, which can be a result of declining, isolated subpopulations caused by any of the aforementioned factors, likely also threatens this species (reviewed in Jepsen et al. 2013). ", img_url:"https://ecos.fws.gov/docs/species_images/doc5094.jpg", category:"arthropod"},
+
+{common_name:"Atlantic Salmon", scientific_name:"Salmo salar", status:"Endangered", threat:"Human consumption", img_url:"https://ecos.fws.gov/docs/species_images/doc4936.jpg", category:"fishes"},
+
+{common_name:"Canada Lynx", scientific_name:"Lynx canadensis", status:"Threatened", threat:"In most of Canada and Alaska, trapping of lynx for the fur trade is managed through regulated seasons. Trapping can reduce lynx populations and can have the greatest impact when hare populations cyclically crash. In the 1980s, in response to concerns about over-harvest during the cyclic low of the lynx-hare cycle, Alaska and most Canadian provinces modifying seasons or bag limits to match harvest with lynx population levels and trends (Golden 1999, Mowat et al. 2000)", img_url:"https://ecos.fws.gov/docs/species_images/doc4979.jpg", category:""},
+
+{common_name:"American Burying Beetle", scientific_name:"Nicrophorus americanus", status:"Critically Endangered", threat:"Habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc5109.jpg", category:"arthropod"},
+
+{common_name:"Plymouth redbelly Turtle", scientific_name:"Pseudemys rubriventris bangsi)", status:"Endangered", threat:"Habitat loss", img_url:"http://www.biologicaldiversity.org/campaigns/esa_works/gallery/images2/NorthernRed-BelliedCooter_JohnWhite_VirginiaHerpetologicalSociety.jpg", category:"reptiles"},
+
+{common_name:"Karner Blue Butterfly", scientific_name:"Lycaeides melissa samuelis", status:"Endangered", threat:"Habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc4905.jpg", category:"arthropod"},
+
+{common_name:"Virginia Big Eared Bat", scientific_name:"Corynorhinus (=plecotus) townsendii virginianus", status:"Endangered", threat:"Use of chemical and biological insecticides is another source of concern affecting their food supply. A less vital, yet very real threat to M. septentrionalis is the disturbance they face in the caves (where recreational 'caving' is popular) or mines (which are often closed after being abandoned) where they hibernate.", img_url:"http://www.planet-mammiferes.org/Photos/Volants/Vespert/PlecTow2.jpg", category:"mammals"},
+
+{common_name:"Spotfin Chub", scientific_name:"Erimonax monachus", status:"Threatened", threat:"Range may have been more continuous before extensive deforestation and impoundment (Jenkins and Burkhead 1994). Causes of decline include siltation, coal sedimentation, pollution, inundation by reservoir development, releases of cold water from reservoirs, stream channelization, and interspecific competition (USFWS 1983; Jenkins and Burkhead 1984); some of these factors affect extant populations (Jenkins and Burkhead 1994). Collecting may significantly reduce local subpopulations (Burkhead and Jenkins 1991).
+", img_url:"https://cff2.earth.com/uploads/2017/01/03143939/Erimonax-monachus.jpg", category:"fishes"},
+
+{common_name:"Roanoke logperch", scientific_name:"Percina rex", status:"Predation", threat:"Decline over the long term likely resulted from reservoir creation and widespread siltation caused by land development and agricultural activities (USFWS 2007). The upper Roanoke River population is threatened by ongoing urbanization, industrial development, water supply and flood control projects, and agricultural runoff in the upper basin (USFWS 1991, 2007); known threats continue to exist in the Roanoke River drainage (USFWS 2007). Smith River population is threatened by operation of Philpott Dam and by continued siltation from upstream agriculture (USFWS 2007). Threats (mainly siltation) in the Nottoway River recently have decreased (see USFWS 2007). Other populations are subject to siltation from agricultural and other human activities and to potential chemical spills.", img_url:"https://upload.wikimedia.org/wikipedia/commons/1/1a/Percina_rex.jpg", category:"fishes"},
+
+{common_name:"Cape Fear Shiner", scientific_name:"Notropis mekistocholas", status:"Endangered", threat:"Threats include deterioration of water quality due to toxic chemical pollution, changes in stream flow, channel modification, siltation, and impoundments (North Carolina Natural Heritage Program).
+", img_url:"https://static.wixstatic.com/media/6f2f2b_6616514e0ead4e6ba7a66456da14769b.jpg_srz_557_369_85_22_0.50_1.20_0.00_jpg_srz", category:"fishes"},
+
+{common_name:"Spruce Fir Spider", scientific_name:"Microhexura montivaga", status:"Threatened", threat:"habitat loss", img_url:"https://upload.wikimedia.org/wikipedia/commons/3/39/Spruce_Fir_Moss_Spider.jpg", category:"arthropod"},
+
+{common_name:"Atlantic Sturgeon", scientific_name:"Acipenser oxyrinchus ", status:"Endangered", threat:"Atlantic sturgeon were an important item of commerce to early American and Canadian colonists and large quantities of meat, roe, oil and isinglass were exported to Europe late 17th and 18th centuries. As flesh and roe (caviar) gained popularity in North American, the species was heavily exploited, particularly during several decades of the late nineteenth century.
+", img_url:"https://upload.wikimedia.org/wikipedia/commons/8/87/Acipenser_oxyrinchus_BM.jpg", category:"fishes"},
+
+{common_name:"Culebra Giant Anole", scientific_name:"Anolis roosevelti", status:"Critically Endangered", threat:"The reasons for the species' decline and possible extinction are unknown.", img_url:"http://www.anoleannals.org/wp-content/uploads/2013/11/cuvieri-sleeping-brown-sanchez.jpg", category:"reptiles"},
+
+{common_name:"Yellow-Shouldered Blackbird", scientific_name:"Agelaius xanthomus", status:"Endangered", threat:"", img_url:"https://ecos.fws.gov/docs/species_images/doc3676.jpg", category:"birds"},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ])

@@ -5,5 +5,5 @@ Rails.application.routes.draw do
     end
   end
   resources :species
-  resources :comments, only: [:index]
+  resources :comments, only: [:index, :show]
 end

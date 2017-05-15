@@ -43,4 +43,4 @@ species= Species.create!([
     {common_name:"Leatherback sea turtle", scientific_name: "Dermochelys coriacea", status: "Endangered ", threat:" incidental capture of marine turtles in fishing gear targeting other species,  direct utilization of turtles or eggs for human use, coastal development", img_url: "https://ecos.fws.gov/docs/species_images/doc3727.jpg", category: reptiles },
 ])
 
-comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11})
+comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11, category_id: 2})

@@ -125,6 +125,7 @@ function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $statePara
  }
 }
 
+
 function CommentEditControllerFunction (CommentFactory, $stateParams){
   this.comment = CommentFactory.get({id: $stateParams.id})
   this.update = function(){
@@ -133,6 +134,7 @@ function CommentEditControllerFunction (CommentFactory, $stateParams){
   this.destroy = function(){
     this.comment.$delete({id: $stateParams.id})
   }
+
 }
 
 

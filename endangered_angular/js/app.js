@@ -55,6 +55,12 @@ angular
 
 function RouterFunction($stateProvider){
 $stateProvider
+.state("home",{
+  url: "",
+  templateUrl: "js/ng-views/category_views/index.html",
+  controller: "CategoryIndexController",
+  controllerAs: "vm"
+})
 .state("categoryIndex",{
   url: "/categories",
   templateUrl: "js/ng-views/category_views/index.html",
@@ -86,12 +92,6 @@ $stateProvider
   controllerAs: "vm"
 })
 
-// .state("commentIndex", {
-// url: "/categories/:category_id/species/:id",
-// templateUrl: "js/ng-views/specie_views/show.html",
-// controller: "CommentIndexController",
-// controllerAs: "vm"
-// })
 
 }
 

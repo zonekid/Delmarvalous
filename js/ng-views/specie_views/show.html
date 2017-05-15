@@ -1,0 +1,13 @@
+<div data-ng-class="vm.specie.category.name">
+<h2>Showing the Species</h2>
+<div><p>Common Name: </p>{{vm.specie.common_name}}</div>
+<div><p>Scientific Name: </p>{{vm.specie.scientific_name}}</div>
+<div><p>Status: </p>{{vm.specie.status}}</div>
+<div><p>Threat: </p>{{vm.specie.threat}}</div>
+<div><img src="{{vm.specie.img_url}}"></div>
+
+<form>
+  <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
+  <button type="button" data-ng-click="vm.create()">Create</button>
+</form>
+</div>

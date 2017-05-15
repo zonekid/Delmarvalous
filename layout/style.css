@@ -32,16 +32,25 @@ body {
 
 .specie-listing-wrapper {
 	display: flex;
-	height: 40px;
+	height: 20px;
 	position: relative;
-	width: 160px;
+	width: 200px;
 }
 
 .specie-icon {
 	background-image: url("green-marker.png");
 	background-size: contain;
+	/*border: solid black 1px;*/
+	display: flex;
 	height: 40px;
+	justify-content: center;
 	width: 40px;
+}
+
+.click-target {
+	/*background-color: gray;*/
+	height: 30px;
+	width: 20px;
 }
 
 .specie-listing {
@@ -57,38 +66,39 @@ body {
 
 .specie-listing-wrapper:nth-of-type(1) {
 	/*background-color: red;*/
-	left: 940px;
-	top: 360px;
+	left: 830px;
+	top: 410px;
 }
 
 .specie-listing-wrapper:nth-of-type(2) {
-	/*background-color: orange;*/
-	left: 920px;
-	top: 300px;
+/*	background-color: orange;*/
+	left: 900px;
+	top: 330px;
+	z-index: 2;
 }
 
 .specie-listing-wrapper:nth-of-type(3) {
-	/*background-color: yellow;*/
-	left: 955px;
-	top: 270px;
+/*	background-color: yellow;*/
+	left: 950px;
+	top: 290px;
 }
 
 .specie-listing-wrapper:nth-of-type(4) {
 	/*background-color: green;*/
-	left: 900px;
-	top: 225px;
+	left: 870px;
+	top: 310px;
 }
 
 .specie-listing-wrapper:nth-of-type(5) {
 	/*background-color: blue;*/
 	left: 905px;
-	top: 250px;
+	top: 310px;
 }
 
 .specie-listing-wrapper:nth-of-type(6) {
-	/*background-color: purple;*/
-	left: 920px;
-	top: 185px;
+/*	background-color: purple;*/
+	left: 840px;
+	top: 335px;
 
 }
 

@@ -184,11 +184,15 @@ species= Species.create!([
 
 {common_name:"Dakota Skipper", scientific_name:"Hesperia dacotae", status:"Vulnerable", threat:"Habitat loss", img_url:"https://www.fws.gov/midwest/Endangered/images/insects/dask/FirstDASKMaleRearedMNZooJune2014ByErikRunquist.jpg", category:"arthropod"},
 
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"Sciotio Madtom", scientific_name:"Noturus trautmani", status:"Endangered", threat:"Habitat loss", img_url:"http://www.fishbase.org/images/species/Nomiu_u0.jpg", category:"fishes"},
+
+{common_name:"Mississippi Sandhill crane", scientific_name:"Grus canadensis pulla", status:"Endangered", threat:"Habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc4896.jpg", category:"birds"},
+
+{common_name:"Dusky Gopher Frog", scientific_name:"Rana sevosa", status:"Endangered", threat:"Major threats include population isolation (inbreeding and susceptibility to catastrophic events), urbanization, two diseases, and apparent lack of a nearby suitable habitat. The range has been significantly reduced as a result of habitat destruction, fragmentation, and modification.", img_url:"https://ecos.fws.gov/docs/species_images/doc1756.jpg", category:"reptiles"},
+
+{common_name:"Hungerford's Crawling Water Beetle", scientific_name:"Brychius hungerfordi", status:"Endangered", threat:"Predation", img_url:"https://ecos.fws.gov/docs/species_images/doc4853.jpg", category:"arthropod"},
+
+{common_name:"Blackside dace", scientific_name:"Phoxinus cumberlandensis", status:"Threatened", threat:"Threatened status is due primarily to impacts of siltation from coal mining, silviculture, agriculture, and road construction, and impacts of unregulated acid mine drainage and impoundments; these factors still constitute a threat.", img_url:"https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQb8vRAoz1ZLrdtgsl1KnjbQX45x45KbS2yotw5q0w5oI4zhaY_", category:"fishes"},
 
 
 

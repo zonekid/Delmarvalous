@@ -84,7 +84,7 @@ function SpecieIndexControllerFunction (AnimalFactory){
 
 function SpecieShowControllerFunction (SpecieFactory, $stateParams){
  this.specie = SpecieFactory.get({id: $stateParams.id})
- 
+
 }
 
 

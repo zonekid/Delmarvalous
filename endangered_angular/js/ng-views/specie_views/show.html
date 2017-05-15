@@ -5,7 +5,7 @@
 
 
 <div data-ng-repeat= "comment in vm.specie.comments">
-{{comment.content}}
+{{comment.content}} <p data-ui-sref="commentEdit({id: comment.id})">(edit)</p>
 </div>
 
 <form>

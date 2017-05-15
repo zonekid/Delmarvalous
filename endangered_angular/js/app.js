@@ -43,6 +43,11 @@ angular
     "$stateParams",
     SpecieShowControllerFunction
   ])
+  .controller("CommentEditController", [
+    "CommentFactory",
+    "$stateParams",
+    CommentEditControllerFunction
+  ])
   // .controller("CommentIndexController",[
   //   "CommentFactory",
   //   CommentIndexControllerFunction
@@ -72,6 +77,12 @@ $stateProvider
   url: "/categories/:category_id/species/:id",
   templateUrl: "js/ng-views/specie_views/show.html",
   controller: "SpecieShowController",
+  controllerAs: "vm"
+})
+.state("commentEdit", {
+  url: "/categories/:category_id/species/:species_id/comments/:id/edit",
+  teplateUrl: "js/ng-views/comment_views/edit.html",
+  controller: "CommentEditController",
   controllerAs: "vm"
 })
 
@@ -114,6 +125,16 @@ function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $statePara
  }
 }
 
+function CommentEditControllerFunction (CommentFactory, $stateParams){
+  this.comment = CommentFactory.get({id: $stateParams.id})
+  this.update = function(){
+    this.comment.$update({id: $stateParams.id})
+  }
+  this.destroy = function(){
+    this.comment.$delete({id: $stateParams.id})
+  }
+}
+
 
 // function CommentIndexControllerFunction (CommentFactory){
 //   this.species = CommentFactory.query()
@@ -133,6 +154,8 @@ function CommentFactoryFunction ( $resource ){
     update: {method: "PUT"}
   })
 }
+
+
 
 
 })();

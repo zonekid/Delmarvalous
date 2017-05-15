@@ -1,4 +1,4 @@
-class Specie < ActiveRecord::base
+class Species < ActiveRecord::Base
   belongs_to :category
   has_many :comments
 end

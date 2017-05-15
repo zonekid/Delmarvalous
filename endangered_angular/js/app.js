@@ -1,3 +1,8 @@
+
+"use strict";
+
+(function(){
+
 angular
   .module("endangeredApp",[
     "ui.router",
@@ -11,50 +16,85 @@ angular
     "$resource",
     AnimalFactoryFunction
   ])
+  .factory("SpecieFactory", [
+    "$resource",
+    SpecieFactoryFunction
+    ])
   .controller("CategoryIndexController", [
     "AnimalFactory",
     CategoryIndexControllerFunction
   ])
   .controller("CategoryShowController",[
     "AnimalFactory",
-    CategoryShowControllerFuncion
+    "$stateParams",
+    CategoryShowControllerFunction
+  ])
+  .controller("SpecieIndexController",[
+    "AnimalFactory",
+    SpecieIndexControllerFunction
+  ])
+  .controller("SpecieShowController",[
+    "SpecieFactory",
+    "$stateParams",
+    SpecieShowControllerFunction
   ])
 
 function RouterFunction($stateProvider){
 $stateProvider
-.state("categoryIndex",[
+.state("categoryIndex",{
   url: "/categories",
   templateUrl: "js/ng-views/category_views/index.html",
   controller: "CategoryIndexController",
   controllerAs: "vm"
-])
-.state("categoryShow",[
+})
+.state("categoryShow",{
   url: "/categories/:id",
   templateUrl: "js/ng-views/category_views/show.html",
-  controller: "CategoryIndexController",
+  controller: "CategoryShowController",
   controllerAs: "vm"
-])
-.state("specieIndex",[
+})
+.state("specieIndex",{
   url: "/species",
   templateUrl: "js/ng-views/specie_views/index.html",
   controller: "SpecieIndexController",
   controllerAs: "vm"
-])
+})
+.state("specieShow",{
+  url: "/categories/:category_id/species/:id",
+  templateUrl: "js/ng-views/specie_views/show.html",
+  controller: "SpecieShowController",
+  controllerAs: "vm"
+})
+
+}
+
+
+function CategoryIndexControllerFunction (AnimalFactory){
+  this.categories = AnimalFactory.query()
+}
+
+
+function CategoryShowControllerFunction (AnimalFactory, $stateParams){
+  this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
 function SpecieIndexControllerFunction (AnimalFactory){
   this.species = AnimalFactory.query()
 }
 
-function CategoryIndexControllerFunction (AnimalFactory){
-  this.categories = AnimalFactory.query()
-}
-// the .query in each index controllerfunction may need some changing so it only grabs the "categories" or "species" separately
+function SpecieShowControllerFunction (SpecieFactory, $stateParams){
+ this.specie = SpecieFactory.get({id: $stateParams.id})
 
-function CategoryShowControllerFunction (AnimalFactory, $stateParams){
-  this.category = AnimalFactroy.get({id: $stateParams.id})
 }
+
 
 function AnimalFactoryFunction( $resource ){
-  return $resource( "http://localhost:3000/", {}, {})
+  return $resource( "http://localhost:3000/categories/:id.json", {}, {})
 }
+
+function SpecieFactoryFunction( $resource ){
+  return $resource( "http://localhost:3000/species/:id.json", {}, {})
+}
+
+
+})();

@@ -96,7 +96,7 @@ function SpecieShowControllerFunction (SpecieFactory, $stateParams){
  this.specie = SpecieFactory.get({id: $stateParams.id})
 
 }
-s
+
 // function CommentIndexControllerFunction (CommentFactory){
 //   this.species = CommentFactory.query()
 // }

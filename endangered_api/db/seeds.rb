@@ -8,6 +8,7 @@
 
 Category.destroy_all
 Species.destroy_all
+Comment.destroy_all
 
 birds= Category.create! ({customizable: false, name: "birds"})
 mammals= Category.create! ({customizable: false, name: "mammals"})
@@ -85,3 +86,5 @@ species= Species.create!([
     {common_name:"Bluetail Mole skink", scientific_name: "Eumeces egregius lividus", status: "Threatened", threat:"Habitat loss is the main threat to the bluetail mole skink (U.S. Fish & Wildlife Service 1999).  Xeric habitat has suffered tremendous losses due to agricultural, residential, and commercial development", img_url: "http://farm1.static.flickr.com/689/22604418880_79049e9a42.jpg", category: reptiles},
     {common_name:"Atlantic Salt Marsh snake", scientific_name: "Nerodia clarkii taeniata", status: "Threatened", threat:"Habitat loss and degradation have been the biggest threats to the Atlantic salt marsh snake.  Habitat loss occurs from excessive filling and development in salt marshes", img_url: "https://www.fws.gov/northflorida/Media/Species/Atl_Salt-Marsh_Snake.jpg", category: reptiles}
 ])
+
+comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11, category_id: 2})

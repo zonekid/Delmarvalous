@@ -1,0 +1,37 @@
+
+.test * {
+   color: orange;
+   font-family: "Special Elite";
+}
+
+
+.welcome {
+    font-family: 'Special Elite', cursive;
+    color: red;
+}
+
+.birds  {
+    background-image: url(sky.jpg);
+    min-height: 900px;
+    background-size: cover;
+}
+img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+/*body::after {
+    content: "";
+    background-image: url(collage.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}*/
+/*main {
+    min-height: 100vh;
+    padding-bottom: 25px;
+}*/

@@ -1,6 +1,11 @@
 .test * {
-   color: orange;
+   color: #FB0000;
    font-family: "Special Elite";
+   font-size: 25px;
+}
+
+.test {
+       margin-top: 40px;
 }
 
 .welcome {
@@ -8,10 +13,40 @@
     color: red;
 }
 
+.welcome-page {
+    display:flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+    border: solid black 3px;
+    padding-bottom: 20px;
 
+}
+
+.welcome-info {
+    width: 66%;
+    box-sizing: border-box;
+    padding: 0 5%;
+
+
+}
+
+.bold-points {
+    font-weight: bold;
+}
+
+.category-welcome-index {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    /*padding-left: 10%*/
+
+
+}
 body {
-    background-image: url("turtle.jpg");
-    background-size: cover;
+    /*background-image: url("turtle.jpg");
+    background-size: cover;*/
 }
 
 .map-wrapper {
@@ -29,6 +64,8 @@ body {
 /*	background-size: contain;*/
 	height: 900px;
 	width: 1200px;
+    border: solid black 3px;
+    border-radius: 30px;
 }
 
 .specie-listing-wrapper {
@@ -221,8 +258,33 @@ body {
 	bottom: 150px;
 }
 
+.specie-show {
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+
+}
+
+.specie-show-info {
+        width: 50%;
+        box-sizing: border-box;
+
+}
+
+.specie-properties {
+    margin-top: 25px;
+}
+
+.specie-show-bold {
+    font-weight: bold;
+}
+.specie-form {
+    margin-top: 40px;
+}
+.specie-img {
+    width: 50%;
+}
 .birds  {
-    background-image: url(sky.jpg);
     min-height: 900px;
     background-size: cover;
 }
@@ -246,4 +308,3 @@ img {
     min-height: 100vh;
     padding-bottom: 25px;
 }*/
-

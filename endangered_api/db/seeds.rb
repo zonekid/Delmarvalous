@@ -162,11 +162,28 @@ species= Species.create!([
 
 {common_name:"Culebra Giant Anole", scientific_name:"Anolis roosevelti", status:"Critically Endangered", threat:"The reasons for the species' decline and possible extinction are unknown.", img_url:"http://www.anoleannals.org/wp-content/uploads/2013/11/cuvieri-sleeping-brown-sanchez.jpg", category:"reptiles"},
 
-{common_name:"Yellow-Shouldered Blackbird", scientific_name:"Agelaius xanthomus", status:"Endangered", threat:"", img_url:"https://ecos.fws.gov/docs/species_images/doc3676.jpg", category:"birds"},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
-{common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
+{common_name:"Yellow-Shouldered Blackbird", scientific_name:"Agelaius xanthomus", status:"Endangered", threat:"Habitat loss", img_url:"https://ecos.fws.gov/docs/species_images/doc3676.jpg", category:"birds"},
+
+{common_name:"Black Pine Snake", scientific_name:"Pituophis melanoleucus lodingi", status:"Threatened", threat:"Habitat loss", img_url:"http://www.freewebs.com/slitherbriggs/Pituophis%20melanoleucus%20lodingi%20YOUNG%20with%20light%20pattern%20Photo%20by%20Patrick%20Houston%20Briggs%20crtsy%20Rick%20Smith%20prnt%20scn.JPG", category:"reptiles"},
+
+{common_name:"Pallid Sturgeon", scientific_name:"Scaphirhynchus albus", status:"Endangered", threat:"Habitat modification, including the construction of six main stem dams on the Missouri River and extensive channelisation in the lower Missouri and Mississippi Rivers, is the primary factor affecting the continued existence of this species.", img_url:"http://www.tnaqua.org/images/uploads/our_animals/Pallid-sturgeon_1200x490.jpg", category:"fishes"},
+
+{common_name:"Least Tern", scientific_name:"Sterna antillarum", status:"Endangered", threat:"Habitat loss", img_url:"http://avesphoto.com/website/pictures/TRNLST-1.jpg", category:"birds"},
+
+{common_name:"Ringed Map turtle", scientific_name:"Graptemys oculifera", status:"Threatened", threat:"Over 21% of the range of Graptemys oculifera had already been channelized by 1986. Plans for channelization of an additional 28% of the Pearl River and over 160 km of the Bogue Chitto river, while not executed, have not been entirely rescinded and remain as a significant potential threat (Jones and Selman 2009).", img_url:"http://www.louisianaherps.com/_Media/dsc04481_med.jpeg", category:"reptiles"},
+
+{common_name:"Gopher tortoise", scientific_name:"Gopherus polyphemus", status:"Vulnerable", threat:"Habitat loss", img_url:"https://upload.wikimedia.org/wikipedia/commons/b/b2/Big_Boy_%28_Gopherus_Polyphemus_from_New_Smyrna_Beach%2C_Florida_%29_-_Flickr_-_Andrea_Westmoreland.jpg", category:"reptiles"},
+
+{common_name:"Hine's Emerald Dragonfly", scientific_name:"Somatochlora hineana", status:"Threatened", threat:"Extant occurrences are threatened by the following activities: petroleum refineries and other heavy industry, a proposed highway project, quarrying, urban non-point water pollution, and ATV use in Illinois; agricultural non-point water pollution (surface and groundwater) and recreational development in Wisconsin. Most significant threats are habitat/alteration/destruction from development of commercial and residential areas, quarrying, creating landfills, constructing pipelines, and filling of wetlands (Zercher 2001).", img_url:"http://www.biologicaldiversity.org/assets/img/species/invertebrates/HinesEmeraldDragonfly_PaulBurton.jpg", category:"arthropod"},
+
+{common_name:"Gray Wolf", scientific_name:"Canis lupus", status:"Endangered", threat:"Their original worldwide range has been reduced by about one-third, primarily in developed areas of Europe, Asia, Mexico, and the United States by poisoning and deliberate persecution due to depredation on livestock. Since about 1970, legal protection, land-use changes, and rural human population shifts to cities have arrested wolf population declines and fostered natural recolonization in parts of Western Europe and the United States, and reintroduction in the western United States. Continued threats include competition with humans for livestock, especially in developing countries, exaggerated concern by the public concerning the threat and danger of wolves, and fragmentation of habitat, with resulting areas becoming too small for populations with long-term viability.", img_url:"https://ecos.fws.gov/docs/species_images/doc3630.jpg", category:"mammals"},
+
+{common_name:"Illinois Cave Arthopod", scientific_name:"Gammarus acherondytes", status:"Endangered", threat:"Habitat loss", img_url:"http://oceanexplorer.noaa.gov/explorations/05deepcorals/logs/nov8/media/fig4amphipod_600.jpg", category:""},
+
+{common_name:"Copperbellied Water Snake", scientific_name:"Nerodia erythrogaster neglecta", status:"Threatened", threat:"Habitat loss", img_url:"http://www.ectotherms.net/gallery/main.php?g2_view=core.DownloadItem&g2_itemId=1173&g2_serialNumber=3", category:"reptiles"},
+
+{common_name:"Dakota Skipper", scientific_name:"Hesperia dacotae", status:"Vulnerable", threat:"Habitat loss", img_url:"https://www.fws.gov/midwest/Endangered/images/insects/dask/FirstDASKMaleRearedMNZooJune2014ByErikRunquist.jpg", category:"arthropod"},
+
 {common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
 {common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},
 {common_name:"", scientific_name:"", status:"", threat:"", img_url:"", category:""},

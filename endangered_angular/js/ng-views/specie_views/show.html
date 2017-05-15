@@ -5,9 +5,10 @@
 
 
 <div data-ng-repeat= "comment in vm.specie.comments">
+{{comment.content}}
 </div>
 
 <form>
-  <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
+  <textarea placeholder="Content" data-ng-model="vm.comment"></textarea>
   <button type="button" data-ng-click="vm.create()">Create</button>
 </form>

@@ -13,7 +13,7 @@ def show
   @specie = Species.find(params[:id])
 
   respond_to do |format|
-    format.json { render json: @specie }
+    format.json { render json: @specie, include: :comments }
   end
 end
 

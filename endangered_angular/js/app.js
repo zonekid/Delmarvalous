@@ -19,7 +19,11 @@ angular
   .factory("SpecieFactory", [
     "$resource",
     SpecieFactoryFunction
-    ])
+  ])
+  .factory("CommentFactory",[
+   "$resource",
+   CommentFactoryFunction
+  ])
   .controller("CategoryIndexController", [
     "AnimalFactory",
     CategoryIndexControllerFunction
@@ -35,6 +39,7 @@ angular
   // ])
   .controller("SpecieShowController",[
     "SpecieFactory",
+    "CommentFactory",
     "$stateParams",
     SpecieShowControllerFunction
   ])
@@ -69,12 +74,13 @@ $stateProvider
   controller: "SpecieShowController",
   controllerAs: "vm"
 })
-.state("commentIndex", {
-url: "/categories/:category_id/species/:id",
-templateUrl: "js/ng-views/specie_views/show.html",
-controller: "CommentIndexController",
-controllerAs: "vm"
-})
+
+// .state("commentIndex", {
+// url: "/categories/:category_id/species/:id",
+// templateUrl: "js/ng-views/specie_views/show.html",
+// controller: "CommentIndexController",
+// controllerAs: "vm"
+// })
 
 }
 
@@ -85,6 +91,7 @@ function CategoryIndexControllerFunction (AnimalFactory){
 
 
 function CategoryShowControllerFunction (AnimalFactory, $stateParams){
+  this.categories = AnimalFactory.query()
   this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
@@ -92,10 +99,21 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
 //   this.species = AnimalFactory.query()
 // }
 
-function SpecieShowControllerFunction (SpecieFactory, $stateParams){
- this.specie = SpecieFactory.get({id: $stateParams.id})
+function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $stateParams){
+  let self = this
+  this.specie = SpecieFactory.get({id: $stateParams.id})
+  this.create = function (){
+    console.log(this.comment)
+    let comment = new CommentFactory()
+    comment.content = this.comment
+    comment.$save({species_id: $stateParams.id}).then(function (response){
+      console.log(response)
+      self.specie.comments.push(response)
 
+   })
+ }
 }
+
 
 // function CommentIndexControllerFunction (CommentFactory){
 //   this.species = CommentFactory.query()
@@ -111,7 +129,9 @@ function SpecieFactoryFunction( $resource ){
 }
 
 function CommentFactoryFunction ( $resource ){
-  return $resource( "http://localhost:3000/comments/:id.json", {}, {})
+  return $resource( "http://localhost:3000/species/:species_id/comments.json", {}, {
+    update: {method: "PUT"}
+  })
 }
 
 

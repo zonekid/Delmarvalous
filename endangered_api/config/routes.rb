@@ -4,6 +4,8 @@ Rails.application.routes.draw do
       resources :comments
     end
   end
-  resources :species
+  resources :species do
+    resources :comments, only: [:index, :create]
+  end
   resources :comments, only: [:index, :show]
 end

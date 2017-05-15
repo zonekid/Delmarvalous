@@ -11,6 +11,7 @@ end
 def create
   @specie= Species.find(params[:species_id])
   @comment= @specie.comments.build(comment_params)
+  @comment.save
 end
 
 private

@@ -66,159 +66,173 @@ body {
 }
 
 .specie-listing-wrapper:nth-of-type(1) {
-	background-color: red;
+	/*background-color: red;*/
 	left: 945px;
 	top: 260px;
 }
 
 .specie-listing-wrapper:nth-of-type(2) {
-	background-color: orange;
-	left: 970px;
+/*	background-color: orange;*/
+	left: 975px;
 	top: 285px;
 }
 
 .specie-listing-wrapper:nth-of-type(3) {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	left: 953px;
 	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(4) {
-	background-color: green;
+	/*background-color: green;*/
 	left: 870px;
 	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(5) {
-	background-color: blue;
+	/*background-color: blue;*/
 	left: 910px;
 	top: 305px;
 }
 
 .specie-listing-wrapper:nth-of-type(6) {
-	background-color: purple;
+	/*background-color: purple;*/
 	left: 820px;
 	top: 308px;
 }
 
 .specie-listing-wrapper:nth-of-type(7) {
-	background-color: brown;
+	/*background-color: brown;*/
 	left: 900px;
 	top: 310px;
 }
 
 .specie-listing-wrapper:nth-of-type(8) {
-	background-color: gray;
+/*	background-color: gray;*/
 	left: 880px;
 	top: 330px;
 }
 
 .specie-listing-wrapper:nth-of-type(9) {
-	background-color: pink;
-	left: 690px;
+	/*background-color: pink;*/
+	left: 760px;
 	top: 340px;
 }
 
 .specie-listing-wrapper:nth-of-type(10) {
-	background-color: black;
-	left: 705px;
+/*	background-color: black;*/
+	left: 775px;
 	top: 345px;
 }
 
 .specie-listing-wrapper:nth-of-type(11) {
-	background-color: red;
+/*	background-color: red;*/
 	left: 760px;
 	top: 360px;
 }
 
 .specie-listing-wrapper:nth-of-type(12) {
-	background-color: orange;
+/*	background-color: orange;*/
 	left: 665px;
 	top: 365px;
 }
 
 .specie-listing-wrapper:nth-of-type(13) {
-	background-color: yellow;
+	/*background-color: yellow;*/
 	left: 730px;
 	top: 380px;
 }
 
 .specie-listing-wrapper:nth-of-type(14) {
-	background-color: green;
+/*	background-color: green;*/
 	left: 765px;
 	top: 390px;
 }
 
 .specie-listing-wrapper:nth-of-type(15) {
-	background-color: blue;
+	/*background-color: blue;*/
 	left: 735px;
 	top: 395px;
 }
 
 .specie-listing-wrapper:nth-of-type(16) {
-	background-color: purple;
+	/*background-color: purple;*/
 	left: 785px;
 	top: 400px;
 }
 
 .specie-listing-wrapper:nth-of-type(17) {
-	background-color: brown;
+	/*background-color: brown;*/
 	left: 795px;
 	top: 410px;
 }
 
 .specie-listing-wrapper:nth-of-type(18) {
-	background-color: gray;
+/*	background-color: gray;*/
 	left: 775px;
 	top: 412px;
 }
 
 .specie-listing-wrapper:nth-of-type(19) {
-	background-color: pink;
+/*	background-color: pink;*/
 	left: 790px;
 	top: 415px;
 }
 
 .specie-listing-wrapper:nth-of-type(20) {
-	background-color: black;
+	/*background-color: black;*/
 	left: 640px;
 /*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(21) {
-	background-color: red;
+	/*background-color: red;*/
 	left: 610px;
 	/*top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(22) {
-	background-color: orange;
+/*	background-color: orange;*/
 	left: 600px;
 /*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(23) {
-	background-color: yellow;
+/*	background-color: yellow;*/
 	left: 690px;
 	/*top: 140px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(24) {
-	background-color: limegreen;
+/*	background-color: limegreen;*/
 	left: 600px;
 /*	bottom: 160px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(25) {
-	background-color: blue;
+/*	background-color: blue;*/
 	left: 550px;
 /*	bottom: 150px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(26) {
-	background-color: purple;
+/*	background-color: purple;*/
+	left: 530px;
+	top: 10px;
+/*	bottom: 150px;*/
+}
+
+.specie-listing-wrapper:nth-of-type(27) {
+/*	background-color: brown;*/
+	left: 560px;
+	top: 15px;
+/*	bottom: 150px;*/
+}
+
+.specie-listing-wrapper:nth-of-type(28) {
+/*	background-color: gray;*/
 	left: 540px;
-	top: 50px;
+	top: 20px;
 /*	bottom: 150px;*/
 }
 

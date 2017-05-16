@@ -1,6 +1,8 @@
 
-<div data-ng-repeat="category in vm.categories">
-<p><a data-ui-sref="categoryShow({id: category.id})">{{category.name}}</a></p>
+<div class = "flexin">
+	<div class="specieshowcat" data-ng-repeat="category in vm.categories">
+		<p><a data-ui-sref="categoryShow({id: category.id})">{{category.name}}</a></p>
+	</div>
 </div>
 
 
@@ -17,5 +19,3 @@
 		</div>
 	</div>
 </div>
-
-

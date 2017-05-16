@@ -1,13 +1,74 @@
+
+.specieshowcat {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: solid orange 1px;
+
+}
+.specieshowcat * {
+  color: red;
+  border: 1px solid black;
+  text-align: center;
+}
+.flexin {
+  display:flex;
+  justify-content: center;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+.test * {
+   color: #FB0000;
+   font-family: "Special Elite";
+   font-size: 25px;
+}
+
+.test {
+       margin-top: 40px;
+}
+
+
 .welcome {
     font-family: 'Special Elite', cursive;
     color: red;
 }
 
+.welcome-page {
+    display:flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+    border: solid black 3px;
+    padding-bottom: 20px;
 
-body {
-    background-image: url("turtle.jpg");
-    background-size: cover;
 }
+
+.welcome-info {
+    width: 66%;
+    box-sizing: border-box;
+    padding: 0 5%;
+
+
+}
+
+.bold-points {
+    font-weight: bold;
+}
+
+.category-welcome-index {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    /*padding-left: 10%*/
+
+
+}
+
+
 
 .map-wrapper {
 	display: flex;
@@ -25,6 +86,8 @@ body {
 	background-repeat: no-repeat;
 	height: 900px;
 	width: 1200px;
+    border: solid black 3px;
+    border-radius: 30px;
 }
 
 .specie-listing-wrapper {
@@ -270,29 +333,182 @@ body {
 /*	bottom: 150px;*/
 }
 
-.bird.birds  {
-    background-image: url(sky.jpg);
-    min-height: 900px;
-    background-size: cover;
-}
-img {
-    max-width: 500px;
-    max-height: 500px;
+
+.specie-show {
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 26px;
+    border-radius: 30px;
+    border: solid black 3px;
+    background-color: white;
+    top: 75px;
+    position: relative;
+    height: 50%;
+    padding: 15px 0px 0px 15px;
+
+
+
 }
 
-/*body::after {
+.specie-show-info {
+        width: 50%;
+        box-sizing: border-box;
+
+}
+
+.specie-properties {
+    margin-top: 25px;
+}
+
+.specie-show-bold {
+    font-weight: bold;
+}
+.specie-form {
+    margin-top: 40px;
+}
+
+.specie-img {
+    /*background-color: white;*/
+    /*width: 50%;*/
+}
+
+
+.show.mammals::after {
     content: "";
-    background-image: url(collage.jpg);
-    opacity: 0.5;
+    background-image: url(lionfur.jpg);
+    opacity: 0.8;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;
-}*/
+
+    min-height: 900px;
+    background-size: cover;
+}
+
+
+.show.amphibians::after {
+    content: "";
+    background-image: url(frogs.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+.show.reptiles::after {
+    content: "";
+    background-image: url(snake.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    font-size: 10px;
+    text-align: center;
+}
+
+h3{
+  margin-bottom: -10px;
+
+}
+
+
+
+
+
+/*body::after {
+
+    content: "";
+    background-image: url(snake.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+.show.fish::after {
+    content: "";
+    background-image: url(fish.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+.show.insects::after {
+    content: "";
+    background-image: url(butterfly2.jpg);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+
+.show.birds::after {
+    content: "";
+    background-image: url(feather.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+
+img {
+    height: 475px;
+    width: 550px;
+    margin-top: 5px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+
+}
+
+
+
 /*main {
     min-height: 100vh;
     padding-bottom: 25px;
 }*/
-

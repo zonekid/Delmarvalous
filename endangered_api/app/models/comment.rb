@@ -1,3 +1,3 @@
 class Comment < ActiveRecord::Base
-  belongs_to :specie
+  belongs_to :species
 end

@@ -8,6 +8,7 @@
 
 Category.destroy_all
 Species.destroy_all
+Comment.destroy_all
 
 birds= Category.create! ({customizable: false, name: "birds"})
 mammals= Category.create! ({customizable: false, name: "mammals"})
@@ -17,6 +18,7 @@ amphibians= Category.create! ({customizable: false, name: "amphibians"})
 insects= Category.create! ({customizable: false, name: "insects"})
 
 species= Species.create!([
+
     {common_name:"Reticulated flatwoods salamander ", scientific_name:"Ambystoma bishopi", status:"Endangered ", threat:"The principal threat is habitat destruction as a result of agriculture, silviculture, and residential and commercial development.", img_url:"http://www.caudata.org/cc/images/species/Ambystoma/A_bishopi1BARTLETT.jpg", category: amphibians},
     {common_name:"Frosted Flatwoods salamander", scientific_name:"Ambystoma cingulatum", status:"Endangered", threat:"Potential threats include conversion of pine flatwoods habitat for agriculture, silviculture, or commercial/residential development; drainage or enlargement (with subsequent introduction of predatory fishes) of breeding ponds; habitat alteration resulting from suppression of fire; mortality and collecting losses associated with crayfish harvest; and highway mortality during migration.", img_url:"http://calphotos.berkeley.edu/imgs/512x768/1111_1111/1111/4649.jpeg", category: amphibians},
     {common_name:"Sand skink", scientific_name:"Neoseps reynoldsi", status:"Threatened", threat:"This species is threatened by habitat destruction for commercial and residential development, agricultural (citrus) development, and phosphate mining. Conversion of habitat to citrus production is the primary threat. Habitat degradation due to fire exclusion is another threat.", img_url:"https://ecos.fws.gov/docs/species_images/doc5037.jpg", category: amphibians},
@@ -121,4 +123,8 @@ species= Species.create!([
     {common_name:"Atlantic Salt Marsh snake", scientific_name:"Nerodia clarkii taeniata", status:"Threatened", threat:"Habitat loss and degradation have been the biggest threats to the Atlantic salt marsh snake.  Habitat loss occurs from excessive filling and development in salt marshes.", img_url:"https://www.fws.gov/northflorida/Media/Species/Atl_Salt-Marsh_Snake.jpg", category: reptiles},
     {common_name:"American crocodile", scientific_name:"Crocodylus acutus", status:"Endangered", threat:"This species was hunted and overexploited for its hides in the 1930s until it was protected in the 1970s, however, illegal hunting still occurs. It is also threatened by habitat degradation from coastal development, including destruction of nesting grounds and the destruction of mangrove swamps for shrimp aquaculture.", img_url:"https://ecos.fws.gov/docs/species_images/doc3726.jpg", category: reptiles},
     {common_name:"Culebra Giant Anole", scientific_name:"Anolis roosevelti", status:"Critically Endangered", threat:"The reasons for the species' decline and possible extinction are unknown.", img_url:"http://www.anoleannals.org/wp-content/uploads/2013/11/cuvieri-sleeping-brown-sanchez.jpg", category: reptiles}
+
+
 ])
+
+comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11, category_id: 2})

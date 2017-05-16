@@ -1,4 +1,16 @@
 
+<div class = "flexin">
+	<div class="specieshowcat" data-ng-repeat="category in vm.categories">
+		<p><a data-ui-sref="categoryShow({id: category.id})">{{category.name}}</a></p>
+	</div>
+</div>
+
+
+
+<div data-ng-repeat= "specie in vm.category.species">
+
+
+
 <div class="map-wrapper">
 	<div class="map">
 		<div class="specie-listing-wrapper" data-ng-repeat= "specie in vm.category.species">
@@ -7,5 +19,3 @@
 		</div>
 	</div>
 </div>
-
-

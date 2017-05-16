@@ -12,9 +12,9 @@ class SpeciesController < ApplicationController
         # @category = Category.find(params[:category_id])
         @specie = Species.find(params[:id])
 
-        respond_to do |format|
-            format.json { render json: @specie.to_json(include: :category) }
-        end
-    end
+  respond_to do |format|
+    format.json { render json: @specie, include: :comments, include: :category }
+  end
+end
 
 end

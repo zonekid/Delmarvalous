@@ -21,6 +21,8 @@ body {
 
 .map-wrapper a {
 	color: white;
+	font-size: 12px;
+	text-align: center;
 }
 
 .map {
@@ -48,6 +50,14 @@ body {
 	width: 40px;
 }
 
+.specie-listing-wrapper.birds .specie-icon {
+	background-image: url("blue-marker.png");
+}
+
+.specie-listing-wrapper.mammals .specie-icon {
+	background-image: url("brown-marker.png");
+}
+
 .click-target {
 	/*background-color: gray;*/
 	height: 40px;
@@ -63,6 +73,14 @@ body {
 	height: 40px;
 	justify-content: center;
 	width: 120px;
+}
+
+.birds .specie-listing {
+	background-color: #1b8df0;
+}
+
+.mammals .specie-listing {
+	background-color: #ca9f5a;
 }
 
 .specie-listing-wrapper:nth-of-type(1) {
@@ -236,7 +254,7 @@ body {
 /*	bottom: 150px;*/
 }
 
-.birds  {
+.bird.birds  {
     background-image: url(sky.jpg);
     min-height: 900px;
     background-size: cover;

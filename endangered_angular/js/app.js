@@ -86,8 +86,8 @@ $stateProvider
   controllerAs: "vm"
 })
 .state("commentEdit", {
-  url: "/categories/:category_id/species/:species_id/comments/:id/edit",
-  teplateUrl: "js/ng-views/comment_views/edit.html",
+  url: "/species/:species_id/comments/:id",
+  templateUrl: "js/ng-views/comment_views/edit.html",
   controller: "CommentEditController",
   controllerAs: "vm"
 })
@@ -127,7 +127,8 @@ function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $statePara
 
 
 function CommentEditControllerFunction (CommentFactory, $stateParams){
-  this.comment = CommentFactory.get({id: $stateParams.id})
+  console.log($stateParams)
+  this.comment = CommentFactory.get({species_id: $stateParams.species_id, id: $stateParams.id})
   this.update = function(){
     this.comment.$update({id: $stateParams.id})
   }
@@ -152,7 +153,7 @@ function SpecieFactoryFunction( $resource ){
 }
 
 function CommentFactoryFunction ( $resource ){
-  return $resource( "http://localhost:3000/species/:species_id/comments.json", {}, {
+  return $resource( "http://localhost:3000/species/:species_id/comments/:id.json", {}, {
     update: {method: "PUT"}
   })
 }

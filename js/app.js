@@ -142,18 +142,18 @@ function CommentEditControllerFunction (CommentFactory, $stateParams){
 // function CommentIndexControllerFunction (CommentFactory){
 //   this.species = CommentFactory.query()
 // }
-
+let domain = "https://shrouded-castle-11429.herokuapp.com"
 
 function AnimalFactoryFunction( $resource ){
-  return $resource( "http://localhost:3000/categories/:id.json", {}, {})
+  return $resource( domain + "/categories/:id.json", {}, {})
 }
 
 function SpecieFactoryFunction( $resource ){
-  return $resource( "http://localhost:3000/species/:id.json", {}, {})
+  return $resource( domain + "/species/:id.json", {}, {})
 }
 
 function CommentFactoryFunction ( $resource ){
-  return $resource( "http://localhost:3000/species/:species_id/comments/:id.json", {}, {
+  return $resource( domain + "/species/:species_id/comments/:id.json", {}, {
     update: {method: "PUT"}
   })
 }

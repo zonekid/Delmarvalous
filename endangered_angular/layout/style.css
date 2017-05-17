@@ -1,25 +1,58 @@
-
-.specieshowcat {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border: solid orange 1px;
-
+.nav-home, .nav-back {
+    align-items: center;
+    display: flex;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
 }
-.specieshowcat * {
-  color: red;
-  border: 1px solid black;
-  text-align: center;
+
+.nav-home *, .nav-back * {
+    color: black;
 }
-.flexin {
+
+.nav-bar {
   display:flex;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
   justify-content: center;
+  margin-bottom: 2%;
+  height: 50px;
 }
 
-/*html {
-  position: relative;
-  min-height: 100%;
-}*/
+.nav-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 1%;
+  width: 10%;
+  border: solid black 1px;
+  border-radius: 20%;
+}
+
+.nav-items:nth-child(1) * {
+  color: #1b8df0;
+}
+
+.nav-items:nth-child(2) * {
+  color: #ca9f5a;
+}
+
+.nav-items:nth-child(3) * {
+  color: #53bba9;
+}
+
+.nav-items:nth-child(4) * {
+  color: #763900;
+}
+
+.nav-items:nth-child(5) * {
+  color: #d31e0b;
+}
+
+.nav-items:nth-child(6) * {
+  color: #714183;
+}
+
+
 .test * {
    color: #FB0000;
    font-family: "Special Elite";
@@ -29,7 +62,6 @@
 .test {
        margin-top: 40px;
 }
-
 
 .welcome {
     font-family: 'Special Elite', cursive;
@@ -49,15 +81,12 @@
     border-radius: 30px;
     border: solid black 3px;
     padding-bottom: 20px;
-
 }
 
 .welcome-info {
     width: 66%;
     box-sizing: border-box;
     padding: 0 5%;
-
-
 }
 
 .bold-points {
@@ -69,11 +98,7 @@
     box-sizing: border-box;
     text-align: center;
     /*padding-left: 10%*/
-
-
 }
-
-
 
 .map-wrapper {
 	display: flex;
@@ -168,174 +193,137 @@
 }
 
 .specie-listing-wrapper:nth-of-type(1) {
-	/*background-color: red;*/
 	left: 945px;
 	top: 260px;
 }
 
 .specie-listing-wrapper:nth-of-type(2) {
-/*	background-color: orange;*/
 	left: 975px;
 	top: 285px;
 }
 
 .specie-listing-wrapper:nth-of-type(3) {
-	/*background-color: yellow;*/
 	left: 953px;
 	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(4) {
-	/*background-color: green;*/
 	left: 870px;
 	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(5) {
-	/*background-color: blue;*/
 	left: 910px;
 	top: 305px;
 }
 
 .specie-listing-wrapper:nth-of-type(6) {
-	/*background-color: purple;*/
 	left: 820px;
 	top: 308px;
 }
 
 .specie-listing-wrapper:nth-of-type(7) {
-	/*background-color: brown;*/
 	left: 900px;
 	top: 310px;
 }
 
 .specie-listing-wrapper:nth-of-type(8) {
-/*	background-color: gray;*/
 	left: 880px;
 	top: 330px;
 }
 
 .specie-listing-wrapper:nth-of-type(9) {
-	/*background-color: pink;*/
 	left: 760px;
 	top: 340px;
 }
 
 .specie-listing-wrapper:nth-of-type(10) {
-/*	background-color: black;*/
 	left: 775px;
 	top: 345px;
 }
 
 .specie-listing-wrapper:nth-of-type(11) {
-/*	background-color: red;*/
 	left: 760px;
 	top: 360px;
 }
 
 .specie-listing-wrapper:nth-of-type(12) {
-/*	background-color: orange;*/
 	left: 665px;
 	top: 365px;
 }
 
 .specie-listing-wrapper:nth-of-type(13) {
-	/*background-color: yellow;*/
 	left: 730px;
 	top: 380px;
 }
 
 .specie-listing-wrapper:nth-of-type(14) {
-/*	background-color: green;*/
 	left: 765px;
 	top: 390px;
 }
 
 .specie-listing-wrapper:nth-of-type(15) {
-	/*background-color: blue;*/
 	left: 735px;
 	top: 395px;
 }
 
 .specie-listing-wrapper:nth-of-type(16) {
-	/*background-color: purple;*/
 	left: 785px;
 	top: 400px;
 }
 
 .specie-listing-wrapper:nth-of-type(17) {
-	/*background-color: brown;*/
 	left: 795px;
 	top: 410px;
 }
 
 .specie-listing-wrapper:nth-of-type(18) {
-/*	background-color: gray;*/
 	left: 775px;
 	top: 412px;
 }
 
 .specie-listing-wrapper:nth-of-type(19) {
-/*	background-color: pink;*/
 	left: 790px;
 	top: 415px;
 }
 
 .specie-listing-wrapper:nth-of-type(20) {
-	/*background-color: black;*/
 	left: 640px;
-/*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(21) {
-	/*background-color: red;*/
 	left: 610px;
-	/*top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(22) {
-/*	background-color: orange;*/
 	left: 600px;
-/*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(23) {
-/*	background-color: yellow;*/
 	left: 690px;
-	/*top: 140px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(24) {
-/*	background-color: limegreen;*/
 	left: 600px;
-/*	bottom: 160px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(25) {
-/*	background-color: blue;*/
 	left: 550px;
-/*	bottom: 150px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(26) {
-/*	background-color: purple;*/
 	left: 530px;
 	top: 10px;
-/*	bottom: 150px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(27) {
-/*	background-color: brown;*/
 	left: 560px;
 	top: 15px;
-/*	bottom: 150px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(28) {
-/*	background-color: gray;*/
 	left: 540px;
 	top: 20px;
-/*	bottom: 150px;*/
 }
 
 
@@ -350,9 +338,6 @@
     position: relative;
     height: 50%;
     padding: 15px 0px 0px 15px;
-
-
-
 }
 
 .specie-show-info {
@@ -420,6 +405,8 @@
     min-height: 900px;
     background-size: cover;
 }
+
+
 
 .show.fish::after {
     content: "";
@@ -495,6 +482,7 @@ footer {
 h3{
   margin-bottom: -10px;
   font-size: 12px;
+
 
 }
 

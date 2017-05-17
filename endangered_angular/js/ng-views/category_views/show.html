@@ -1,10 +1,15 @@
-<h1 class="welcome">Endangered Delmarva Animals</h1>
 
-<div class = "flexin">
-	<div class="specieshowcat" data-ng-repeat="category in vm.categories">
+<h1 class="welcome">Endangered In The East</h1>
+               
+<div class="nav-home"><a data-ui-sref="categoryIndex">&lt&ltHome</a></div>
+
+
+<div class = "nav-bar">
+	<div class="nav-items" data-ng-repeat="category in vm.categories">
 		<p><a data-ui-sref="categoryShow({id: category.id})">{{category.name}}</a></p>
 	</div>
 </div>
+
 
 
 
@@ -16,4 +21,4 @@
 			<div class="specie-listing" ng-show="show"><a data-ui-sref="specieShow({id: specie.id})">{{specie.common_name}}</a></div>
 		</div>
 	</div>
-</div>
+<!-- </div> -->

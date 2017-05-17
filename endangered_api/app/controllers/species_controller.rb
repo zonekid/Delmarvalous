@@ -14,7 +14,7 @@ class SpeciesController < ApplicationController
 
 
         respond_to do |format|
-            format.json { render json: @specie, include: :comments, include: :category }
+            format.json { render json: @specie, include: :category }
 
         end
     end

@@ -15,20 +15,20 @@ def create
 
 end
 
-# def update
-#     @comment = Comment.find(params[:id])
-#     if @comment.update(comment_params)
-#       render json: @comment.to_json, status: :ok
-#     else
-#       render json: @comment.errors, status: :unprocessable_entity
-#     end
-#   end
-#
-#   def destroy
-#     @comment = Comment.find(params[:id])
-#     @comment.destroy
-#     render json: {message: "success"}, status: :ok
-#   end
+def update
+    @comment = Comment.find(params[:id])
+    if @comment.update(comment_params)
+      render json: @comment.to_json, status: :ok
+    else
+      render json: @comment.errors, status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    render json: {message: "success"}, status: :ok
+  end
 
 
 private

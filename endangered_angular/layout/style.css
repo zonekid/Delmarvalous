@@ -1,3 +1,4 @@
+
 .specieshowcat {
   display: flex;
   justify-content: center;
@@ -20,21 +21,54 @@ html {
   min-height: 100%;
 }
 .test * {
-   color: orange;
+   color: #FB0000;
    font-family: "Special Elite";
+   font-size: 25px;
 }
+
+.test {
+       margin-top: 40px;
+}
+
 
 .welcome {
     font-family: 'Special Elite', cursive;
     color: red;
 }
 
+.welcome-page {
+    display:flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 18px;
+    background-color: #F1F1F1;
+    border-radius: 30px;
+    border: solid black 3px;
+    padding-bottom: 20px;
 
-body {
-    background-image: url("turtle.jpg");
-    background-size: cover;
-    margin: 0 0 100px;
 }
+
+.welcome-info {
+    width: 66%;
+    box-sizing: border-box;
+    padding: 0 5%;
+
+
+}
+
+.bold-points {
+    font-weight: bold;
+}
+
+.category-welcome-index {
+    width: 33%;
+    box-sizing: border-box;
+    text-align: center;
+    /*padding-left: 10%*/
+
+
+}
+
+
 
 .map-wrapper {
 	display: flex;
@@ -43,14 +77,17 @@ body {
 
 .map-wrapper a {
 	color: white;
+	font-size: 12px;
+	text-align: center;
 }
 
 .map {
 	background-image: url("map-of-states.jpg");
 	background-repeat: no-repeat;
-/*	background-size: contain;*/
 	height: 900px;
 	width: 1200px;
+    border: solid black 3px;
+    border-radius: 30px;
 }
 
 .specie-listing-wrapper {
@@ -63,15 +100,33 @@ body {
 .specie-icon {
 	background-image: url("green-marker.png");
 	background-size: contain;
-	/*border: solid black 1px;*/
 	display: flex;
 	height: 40px;
 	justify-content: center;
 	width: 40px;
 }
 
+.specie-listing-wrapper.birds .specie-icon {
+	background-image: url("blue-marker.png");
+}
+
+.specie-listing-wrapper.mammals .specie-icon {
+	background-image: url("brown-marker.png");
+}
+
+.specie-listing-wrapper.reptiles .specie-icon {
+	background-image: url("dark-brown-marker.png");
+}
+
+.specie-listing-wrapper.amphibians .specie-icon {
+	background-image: url("red-marker.png");
+}
+
+.specie-listing-wrapper.insects .specie-icon {
+	background-image: url("purple-marker.png");
+}
+
 .click-target {
-	/*background-color: gray;*/
 	height: 40px;
 	width: 20px;
 }
@@ -87,171 +142,281 @@ body {
 	width: 120px;
 }
 
+.birds .specie-listing {
+	background-color: #1b8df0;
+}
+
+.mammals .specie-listing {
+	background-color: #ca9f5a;
+}
+
+.reptiles .specie-listing {
+	background-color: #763900;
+}
+
+.amphibians .specie-listing {
+	background-color: #d31e0b;
+}
+
+.insects .specie-listing {
+	background-color: #714183;
+}
+
 .specie-listing-wrapper:nth-of-type(1) {
 	/*background-color: red;*/
-	left: 835px;
-	top: 410px;
+	left: 945px;
+	top: 260px;
 }
 
 .specie-listing-wrapper:nth-of-type(2) {
 /*	background-color: orange;*/
-	left: 900px;
-	top: 320px;
+	left: 975px;
+	top: 285px;
 }
 
 .specie-listing-wrapper:nth-of-type(3) {
 	/*background-color: yellow;*/
-	left: 950px;
-	top: 280px;
+	left: 953px;
+	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(4) {
 	/*background-color: green;*/
-	left: 860px;
+	left: 870px;
 	top: 300px;
 }
 
 .specie-listing-wrapper:nth-of-type(5) {
 	/*background-color: blue;*/
-	left: 905px;
-	top: 310px;
+	left: 910px;
+	top: 305px;
 }
 
 .specie-listing-wrapper:nth-of-type(6) {
 	/*background-color: purple;*/
-	left: 840px;
-	top: 330px;
+	left: 820px;
+	top: 308px;
 }
 
 .specie-listing-wrapper:nth-of-type(7) {
 	/*background-color: brown;*/
-	left: 740px;
-	top: 340px;
+	left: 900px;
+	top: 310px;
 }
 
 .specie-listing-wrapper:nth-of-type(8) {
-	/*background-color: gray;*/
-	left: 900px;
+/*	background-color: gray;*/
+	left: 880px;
 	top: 330px;
 }
 
 .specie-listing-wrapper:nth-of-type(9) {
 	/*background-color: pink;*/
-	left: 680px;
-	top: 290px;
+	left: 760px;
+	top: 340px;
 }
 
 .specie-listing-wrapper:nth-of-type(10) {
-	/*background-color: black;*/
-	left: 600px;
-	top: 250px;
+/*	background-color: black;*/
+	left: 775px;
+	top: 345px;
 }
 
 .specie-listing-wrapper:nth-of-type(11) {
-	/*background-color: red;*/
-	left: 620px;
-	top: 200px;
+/*	background-color: red;*/
+	left: 760px;
+	top: 360px;
 }
 
 .specie-listing-wrapper:nth-of-type(12) {
-	/*background-color: orange;*/
-	left: 650px;
-	top: 200px;
+/*	background-color: orange;*/
+	left: 665px;
+	top: 365px;
 }
 
 .specie-listing-wrapper:nth-of-type(13) {
 	/*background-color: yellow;*/
-	left: 720px;
-	top: 140px;
+	left: 730px;
+	top: 380px;
 }
 
 .specie-listing-wrapper:nth-of-type(14) {
-	/*background-color: green;*/
-	left: 705px;
-	top: 220px;
+/*	background-color: green;*/
+	left: 765px;
+	top: 390px;
 }
 
 .specie-listing-wrapper:nth-of-type(15) {
 	/*background-color: blue;*/
-	left: 685px;
-	top: 220px;
+	left: 735px;
+	top: 395px;
 }
 
 .specie-listing-wrapper:nth-of-type(16) {
 	/*background-color: purple;*/
-	left: 540px;
-	top: 170px;
+	left: 785px;
+	top: 400px;
 }
 
 .specie-listing-wrapper:nth-of-type(17) {
 	/*background-color: brown;*/
-	left: 490px;
-	top: 130px;
+	left: 795px;
+	top: 410px;
 }
 
 .specie-listing-wrapper:nth-of-type(18) {
-	/*background-color: gray;*/
-	left: 490px;
-	top: 150px;
+/*	background-color: gray;*/
+	left: 775px;
+	top: 412px;
 }
 
 .specie-listing-wrapper:nth-of-type(19) {
-	/*background-color: pink;*/
-	left: 495px;
-	top: 150px;
+/*	background-color: pink;*/
+	left: 790px;
+	top: 415px;
 }
 
 .specie-listing-wrapper:nth-of-type(20) {
 	/*background-color: black;*/
-	left: 760px;
-	top: 140px;
+	left: 640px;
+/*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(21) {
 	/*background-color: red;*/
-	left: 780px;
-	top: 140px;
+	left: 610px;
+	/*top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(22) {
-	/*background-color: orange;*/
-	left: 680px;
-	top: 140px;
+/*	background-color: orange;*/
+	left: 600px;
+/*	top: 40px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(23) {
-	/*background-color: yellow;*/
+/*	background-color: yellow;*/
 	left: 690px;
-	top: 140px;
+	/*top: 140px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(24) {
-	/*background-color: limegreen;*/
-	left: 690px;
-	bottom: 160px;
+/*	background-color: limegreen;*/
+	left: 600px;
+/*	bottom: 160px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(25) {
-	/*background-color: blue;*/
-	left: 700px;
-	bottom: 150px;
+/*	background-color: blue;*/
+	left: 550px;
+/*	bottom: 150px;*/
 }
 
 .specie-listing-wrapper:nth-of-type(26) {
-	/*background-color: purple;*/
-	left: 710px;
-	bottom: 150px;
+/*	background-color: purple;*/
+	left: 530px;
+	top: 10px;
+/*	bottom: 150px;*/
 }
 
-.birds  {
-    background-image: url(sky.jpg);
+.specie-listing-wrapper:nth-of-type(27) {
+/*	background-color: brown;*/
+	left: 560px;
+	top: 15px;
+/*	bottom: 150px;*/
+}
+
+.specie-listing-wrapper:nth-of-type(28) {
+/*	background-color: gray;*/
+	left: 540px;
+	top: 20px;
+/*	bottom: 150px;*/
+}
+
+
+.specie-show {
+    display: flex;
+    font-family: 'Inconsolata', monospace;
+    font-size: 26px;
+    border-radius: 30px;
+    border: solid black 3px;
+    background-color: white;
+    top: 75px;
+    position: relative;
+    height: 50%;
+    padding: 15px 0px 0px 15px;
+
+
+
+}
+
+.specie-show-info {
+        width: 50%;
+        box-sizing: border-box;
+
+}
+
+.specie-properties {
+    margin-top: 25px;
+}
+
+.specie-show-bold {
+    font-weight: bold;
+}
+.specie-form {
+    margin-top: 40px;
+}
+
+.specie-img {
+    /*background-color: white;*/
+    /*width: 50%;*/
+}
+
+
+.show.mammals::after {
+    content: "";
+    background-image: url(lionfur.jpg);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+
     min-height: 900px;
     background-size: cover;
 }
-img {
-    max-width: 500px;
-    max-height: 500px;
+
+
+.show.amphibians::after {
+    content: "";
+    background-image: url(frogs.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
 }
+.show.reptiles::after {
+    content: "";
+    background-image: url(snake.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+
+
 
 footer {
     position: absolute;
@@ -274,15 +439,64 @@ h3{
 
 /*body::after {
     content: "";
-    background-image: url(collage.jpg);
-    opacity: 0.5;
+    background-image: url(snake.jpg);
+    opacity: 0.7;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;
-}*/
+    min-height: 900px;
+    background-size: cover;
+}
+.show.fish::after {
+    content: "";
+    background-image: url(fish.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+.show.insects::after {
+    content: "";
+    background-image: url(butterfly2.jpg);
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+.show.birds::after {
+    content: "";
+    background-image: url(feather.jpg);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    min-height: 900px;
+    background-size: cover;
+}
+img {
+    height: 475px;
+    width: 550px;
+    margin-top: 5px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
 /*main {
     min-height: 100vh;
     padding-bottom: 25px;

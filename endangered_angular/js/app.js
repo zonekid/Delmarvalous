@@ -1,4 +1,3 @@
-
 "use strict";
 
 (function(){
@@ -33,25 +32,12 @@ angular
     "$stateParams",
     CategoryShowControllerFunction
   ])
-  // .controller("SpecieIndexController",[
-  //   "AnimalFactory",
-  //   SpecieIndexControllerFunction
-  // ])
   .controller("SpecieShowController",[
     "SpecieFactory",
     "CommentFactory",
     "$stateParams",
     SpecieShowControllerFunction
   ])
-  .controller("CommentEditController", [
-    "CommentFactory",
-    "$stateParams",
-    CommentEditControllerFunction
-  ])
-  // .controller("CommentIndexController",[
-  //   "CommentFactory",
-  //   CommentIndexControllerFunction
-  // ])
 
 function RouterFunction($stateProvider){
 $stateProvider
@@ -73,12 +59,6 @@ $stateProvider
   controller: "CategoryShowController",
   controllerAs: "vm"
 })
-// .state("specieIndex",{
-//   url: "/species",
-//   templateUrl: "js/ng-views/specie_views/index.html",
-//   controller: "SpecieIndexController",
-//   controllerAs: "vm"
-// })
 .state("specieShow",{
   url: "/categories/:category_id/species/:id",
   templateUrl: "js/ng-views/specie_views/show.html",
@@ -86,8 +66,8 @@ $stateProvider
   controllerAs: "vm"
 })
 .state("commentEdit", {
-  url: "/species/:species_id/comments/:id",
-  templateUrl: "js/ng-views/comment_views/edit.html",
+  url: "/categories/:category_id/species/:species_id/comments/:id/edit",
+  teplateUrl: "js/ng-views/comment_views/edit.html",
   controller: "CommentEditController",
   controllerAs: "vm"
 })
@@ -106,9 +86,6 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
-// function SpecieIndexControllerFunction (AnimalFactory){
-//   this.species = AnimalFactory.query()
-// }
 
 function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $stateParams){
   let self = this
@@ -126,22 +103,6 @@ function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $statePara
 }
 
 
-function CommentEditControllerFunction (CommentFactory, $stateParams){
-  console.log($stateParams)
-  this.comment = CommentFactory.get({species_id: $stateParams.species_id, id: $stateParams.id})
-  this.update = function(){
-    this.comment.$update({id: $stateParams.id})
-  }
-  this.destroy = function(){
-    this.comment.$delete({id: $stateParams.id})
-  }
-
-}
-
-
-// function CommentIndexControllerFunction (CommentFactory){
-//   this.species = CommentFactory.query()
-// }
 
 
 function AnimalFactoryFunction( $resource ){
@@ -153,7 +114,7 @@ function SpecieFactoryFunction( $resource ){
 }
 
 function CommentFactoryFunction ( $resource ){
-  return $resource( "http://localhost:3000/species/:species_id/comments/:id.json", {}, {
+  return $resource( "http://localhost:3000/species/:species_id/comments.json", {}, {
     update: {method: "PUT"}
   })
 }

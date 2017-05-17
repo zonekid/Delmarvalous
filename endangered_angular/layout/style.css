@@ -73,6 +73,11 @@
     color: black;
 }
 
+.welcome-show {
+    font-family: 'Special Elite', cursive;
+    color: black;
+}
+
 .welcome-page {
     display:flex;
     font-family: 'Inconsolata', monospace;

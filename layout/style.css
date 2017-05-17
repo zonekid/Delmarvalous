@@ -1,7 +1,21 @@
+.nav-home, .nav-back {
+    align-items: center;
+    display: flex;
+    font-family: 'Special Elite', cursive;
+    font-weight: bold;
+}
+
+.nav-home *, .nav-back * {
+    color: black;
+}
+
 .nav-bar {
   display:flex;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
   justify-content: center;
   margin-bottom: 2%;
+  height: 50px;
 }
 
 .nav-items {

@@ -33,10 +33,6 @@ angular
     "$stateParams",
     CategoryShowControllerFunction
   ])
-  // .controller("SpecieIndexController",[
-  //   "AnimalFactory",
-  //   SpecieIndexControllerFunction
-  // ])
   .controller("SpecieShowController",[
     "SpecieFactory",
     "CommentFactory",
@@ -48,10 +44,6 @@ angular
     "$stateParams",
     CommentEditControllerFunction
   ])
-  // .controller("CommentIndexController",[
-  //   "CommentFactory",
-  //   CommentIndexControllerFunction
-  // ])
 
 function RouterFunction($stateProvider){
 $stateProvider
@@ -73,12 +65,6 @@ $stateProvider
   controller: "CategoryShowController",
   controllerAs: "vm"
 })
-// .state("specieIndex",{
-//   url: "/species",
-//   templateUrl: "js/ng-views/specie_views/index.html",
-//   controller: "SpecieIndexController",
-//   controllerAs: "vm"
-// })
 .state("specieShow",{
   url: "/categories/:category_id/species/:id",
   templateUrl: "js/ng-views/specie_views/show.html",
@@ -106,9 +92,6 @@ function CategoryShowControllerFunction (AnimalFactory, $stateParams){
   this.category = AnimalFactory.get({id: $stateParams.id})
 }
 
-// function SpecieIndexControllerFunction (AnimalFactory){
-//   this.species = AnimalFactory.query()
-// }
 
 function SpecieShowControllerFunction (SpecieFactory, CommentFactory, $stateParams){
   let self = this
@@ -138,10 +121,6 @@ function CommentEditControllerFunction (CommentFactory, $stateParams){
 
 }
 
-
-// function CommentIndexControllerFunction (CommentFactory){
-//   this.species = CommentFactory.query()
-// }
 
 
 function AnimalFactoryFunction( $resource ){

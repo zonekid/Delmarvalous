@@ -1,5 +1,5 @@
 <h1 class="welcome-id">Endangered In The East</h1>
-               
+
 <div class="nav-home"><a data-ui-sref="categoryIndex">&lt&ltHome</a></div>
 <div class="nav-back"><a data-ui-sref="categoryShow">&lt&ltBack</a></div>
 
@@ -14,13 +14,6 @@
             <div class="specie-properties"> <span class="specie-show-bold">Status:</span> {{vm.specie.status}}</div>
             <div class="specie-properties"> <span class="specie-show-bold">Threat:</span> {{vm.specie.threat}}</div>
             <div class="specie-form">
-                <div data-ng-repeat= “comment in vm.specie.comments”>
-                    {{comment.content}} <p data-ui-sref=“commentEdit ({id: comment.id})“>(edit)</p>
-                </div>
-                <form>
-                    <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
-                    <button type="button" data-ng-click="vm.create()">Create</button>
-                </form>
             </div>
         </div>
         <div class="specie-img"><img src="{{vm.specie.img_url}}"></div>

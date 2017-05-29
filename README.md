@@ -1,5 +1,4 @@
-# Delmarvalous
-Project 3 baby
+Endangered In The East
 
 Every 24 hours 150 to 200 animals/plants become extinct.  Our app "Endangered in the East" presents information in regards to those who originate from the east.  Users will be able to view information specific to each specie within their class.  Users will also be able to decipher amongst the different species through an interactive map with hover effects.
 

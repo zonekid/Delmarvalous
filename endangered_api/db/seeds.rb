@@ -8,7 +8,7 @@
 
 Category.destroy_all
 Species.destroy_all
-Comment.destroy_all
+
 
 birds= Category.create! ({customizable: false, name: "birds"})
 mammals= Category.create! ({customizable: false, name: "mammals"})
@@ -123,5 +123,3 @@ species= Species.create!([
     {common_name:"American crocodile", scientific_name:"Crocodylus acutus", status:"Endangered", threat:"This species was hunted and overexploited for its hides in the 1930s until it was protected in the 1970s, however, illegal hunting still occurs. It is also threatened by habitat degradation from coastal development, including destruction of nesting grounds and the destruction of mangrove swamps for shrimp aquaculture.", img_url:"https://ecos.fws.gov/docs/species_images/doc3726.jpg", category: reptiles},
     {common_name:"Culebra Giant Anole", scientific_name:"Anolis roosevelti", status:"Critically Endangered", threat:"The reasons for the species' decline and possible extinction are unknown.", img_url:"http://www.anoleannals.org/wp-content/uploads/2013/11/cuvieri-sleeping-brown-sanchez.jpg", category: reptiles}
 ])
-
-comment = Comment.create!({content: "Hurrrray its showing!", species_id: 11, category_id: 2})

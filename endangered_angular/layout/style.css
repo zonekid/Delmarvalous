@@ -494,3 +494,8 @@ h3{
 .footer-links {
     margin-right: 5px;
 }
+
+.quiz {
+    font-weight: bold;
+    margin-top: 15%;
+}

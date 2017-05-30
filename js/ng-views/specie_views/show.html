@@ -17,10 +17,6 @@
                 <div data-ng-repeat= “comment in vm.specie.comments”>
                     {{comment.content}} <p data-ui-sref=“commentEdit ({id: comment.id})“>(edit)</p>
                 </div>
-                <form>
-                    <textarea placeholder="Content" data-ng-model="vm.comment.content"></textarea>
-                    <button type="button" data-ng-click="vm.create()">Create</button>
-                </form>
             </div>
         </div>
         <div class="specie-img"><img src="{{vm.specie.img_url}}"></div>

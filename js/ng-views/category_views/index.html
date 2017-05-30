@@ -1,47 +1,50 @@
 <h1 class="welcome">Endangered In The East</h1>
 
 <div class="welcome-page">
-<div class="welcome-info">
+	<div class="welcome-info">
 
 
-<h1>About</h1>
+	<h1>About</h1>
 
-<div>Endangered species are species that are likely to become extinct (no longer in existence).  In North America, there are approximately a thousand animal species that are Critically Endangered, Endangered, or Vulnerable.  Habitat destruction and degradation is a leading cause of endangerment.</div>
+	<div>Endangered species are species that are likely to become extinct (no longer in existence).  In North America, there are approximately a thousand animal species that are Critically Endangered, Endangered, or Vulnerable.  Habitat destruction and degradation is a leading cause of endangerment.</div>
 
-<h2>Categories</h2>
+	<h2>Categories</h2>
 
-<div>The International Union for Conservation of Nature (IUCN) Red List of Threatened Species is a comprehensive inventory of the conservation status of species throughout the world.  The IUCN has standardized the terms for the different levels of risk species may face.</div>
+	<div>The International Union for Conservation of Nature (IUCN) Red List of Threatened Species is a comprehensive inventory of the conservation status of species throughout the world.  The IUCN has standardized the terms for the different levels of risk species may face.</div>
 
-<div>The IUCN categories of risk status are: </div>
-<ul>
-	<li><span class="bold-points">Extinct:</span> there is no reasonable doubt that the last individual has died.</li>
-	<li><span class="bold-points">Extinct In The Wild:</span> known only to survive in cultivation or captivity.</li>
-	<li><span class="bold-points">Critically Endangered:</span> considered to be facing an extremely high risk of extinction in the wild.</li>
-	<li><span class="bold-points">Endangered:</span> considered to be facing a very high risk or extinction in the wild.</li>
-	<li><span class="bold-points">Vulnerable:</span> considered to be facing a high risk of extinction in the wild.</li>
-	<li><span class="bold-points">Near Threatened:</span> close to qualifying for or likely to qualify for a threatened category in the near future.</li>
-	<li><span class="bold-points">Least Concern:</span> no immediate threat.</li>
-	<li><span class="bold-points">Data Deficient:</span> there is inadequate information to make an assessment of its risk.</li>
-</ul>
+	<div>The IUCN categories of risk status are: </div>
+	<ul>
+		<li><span class="bold-points">Extinct:</span> there is no reasonable doubt that the last individual has died.</li>
+		<li><span class="bold-points">Extinct In The Wild:</span> known only to survive in cultivation or captivity.</li>
+		<li><span class="bold-points">Critically Endangered:</span> considered to be facing an extremely high risk of extinction in the wild.</li>
+		<li><span class="bold-points">Endangered:</span> considered to be facing a very high risk or extinction in the wild.</li>
+		<li><span class="bold-points">Vulnerable:</span> considered to be facing a high risk of extinction in the wild.</li>
+		<li><span class="bold-points">Near Threatened:</span> close to qualifying for or likely to qualify for a threatened category in the near future.</li>
+		<li><span class="bold-points">Least Concern:</span> no immediate threat.</li>
+		<li><span class="bold-points">Data Deficient:</span> there is inadequate information to make an assessment of its risk.</li>
+	</ul>
 
-<h2>Why Care</h2>
+	<h2>Why Care</h2>
 
-<div>Aside from extinction being heart-breakingly sad, it can have far-reaching effects on the environment at large.  Extinctions are now occuring at a rate that exceeds the rate at which new species are developing.  Each extinction decreases the diversity of life on earth, and potentially could contribute to the failure of entire ecosystems.  Food and medicinal benefits of different animals also disappear when a species is lost.</div>
+	<div>Aside from extinction being heart-breakingly sad, it can have far-reaching effects on the environment at large.  Extinctions are now occuring at a rate that exceeds the rate at which new species are developing.  Each extinction decreases the diversity of life on earth, and potentially could contribute to the failure of entire ecosystems.  Food and medicinal benefits of different animals also disappear when a species is lost.</div>
 
 
 
-</div>
-<div class="category-welcome-index">
-    <nav>
+	</div>
+	<div class="category-welcome-index">
+    	<nav>
 
-    <h2>Explore</h2>
+    	<h2>Explore</h2>
 
-    <div>These are 6 major classes of animals that are threatened in North America.  Click on each one to explore more.</div>
+    	<div>These are 6 major classes of animals that are threatened in North America.  Click on each one to explore more.</div>
 
-    <div data-ng-repeat="category in vm.categories">
+    	<div data-ng-repeat="category in vm.categories">
         <p class="test"><a data-ui-sref="categoryShow({id: category.id})">{{category.name}}</a></p>
-</div>
-</div>
+		</div>
+
+		<div class="quiz"><a href="https://pchristianbrown.github.io/EEQuiz.html">Test Your Knowledge - Take A Quiz</a></div>
+
+	</div>
 </div>
 
 
